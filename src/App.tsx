@@ -106,15 +106,15 @@ export default function App() {
           <div className="container mx-auto max-w-[1200px] px-4 md:px-6">
             <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16 text-center md:text-left opacity-80">
               <div className="flex items-center gap-3">
-                <span className="material-symbols-outlined text-4xl text-primary">verified_user</span>
+                <span className="material-symbols-outlined text-4xl text-[#0066cc]">verified_user</span>
                 <span className="text-lg font-bold text-text-heading">Garantia de Serviço</span>
               </div>
               <div className="flex items-center gap-3">
-                <span className="material-symbols-outlined text-4xl text-primary">schedule</span>
+                <span className="material-symbols-outlined text-4xl text-[#0066cc]">schedule</span>
                 <span className="text-lg font-bold text-text-heading">Pontualidade</span>
               </div>
               <div className="flex items-center gap-3">
-                <span className="material-symbols-outlined text-4xl text-primary">savings</span>
+                <span className="material-symbols-outlined text-4xl text-[#0066cc]">savings</span>
                 <span className="text-lg font-bold text-text-heading">Preço Justo</span>
               </div>
             </div>
@@ -123,7 +123,7 @@ export default function App() {
         <section className="py-16 md:py-24 bg-sky-50" id="servicos">
           <div className="container mx-auto max-w-[1200px] px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center mb-16">
-              <span className="text-primary font-bold tracking-wider uppercase text-sm bg-blue-100 px-3 py-1 rounded-full">O que fazemos</span>
+              <span className="text-[#0066cc] font-bold tracking-wider uppercase text-sm bg-blue-100 px-3 py-1 rounded-full">O que fazemos</span>
               <h2 className="font-display text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl text-text-heading">Cuidamos do seu conforto</h2>
               <p className="max-w-[700px] text-text-muted md:text-lg">
                 Soluções completas para você não se preocupar com o calor. Tudo feito com limpeza e organização.
@@ -131,38 +131,38 @@ export default function App() {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="group relative bg-white rounded-3xl p-8 shadow-soft hover:shadow-hover transition-all duration-300 border border-slate-100">
-                <div className="mb-6 inline-flex h-16 w-16 items-center justify-center rounded-2xl bg-blue-50 text-primary group-hover:scale-110 transition-transform duration-300">
+                <div className="mb-6 inline-flex h-16 w-16 items-center justify-center rounded-2xl bg-blue-50 text-[#0066cc] group-hover:scale-110 transition-transform duration-300">
                   <span className="material-symbols-outlined text-4xl">handyman</span>
                 </div>
                 <h3 className="mb-3 text-2xl font-display font-bold text-text-heading">Instalação</h3>
                 <p className="text-text-muted leading-relaxed mb-4">
                   Instalamos seu aparelho novo com todo cuidado, sem sujeira e no local ideal para refrescar sua casa inteira.
                 </p>
-                <a className="inline-flex items-center font-bold text-primary hover:text-sky-700" href="#">
+                <a className="inline-flex items-center font-bold text-[#0066cc] hover:text-[#0052a3]" href="#">
                   Saiba mais <span className="material-symbols-outlined ml-1 text-sm">arrow_forward</span>
                 </a>
               </div>
               <div className="group relative bg-white rounded-3xl p-8 shadow-soft hover:shadow-hover transition-all duration-300 border border-slate-100">
-                <div className="mb-6 inline-flex h-16 w-16 items-center justify-center rounded-2xl bg-blue-50 text-primary group-hover:scale-110 transition-transform duration-300">
+                <div className="mb-6 inline-flex h-16 w-16 items-center justify-center rounded-2xl bg-blue-50 text-[#0066cc] group-hover:scale-110 transition-transform duration-300">
                   <span className="material-symbols-outlined text-4xl">build_circle</span>
                 </div>
                 <h3 className="mb-3 text-2xl font-display font-bold text-text-heading">Manutenção</h3>
                 <p className="text-text-muted leading-relaxed mb-4">
                   Seu ar parou de gelar? Fazemos o conserto rápido para devolver o conforto da sua família.
                 </p>
-                <a className="inline-flex items-center font-bold text-primary hover:text-sky-700" href="#">
+                <a className="inline-flex items-center font-bold text-[#0066cc] hover:text-[#0052a3]" href="#">
                   Saiba mais <span className="material-symbols-outlined ml-1 text-sm">arrow_forward</span>
                 </a>
               </div>
               <div className="group relative bg-white rounded-3xl p-8 shadow-soft hover:shadow-hover transition-all duration-300 border border-slate-100">
-                <div className="mb-6 inline-flex h-16 w-16 items-center justify-center rounded-2xl bg-blue-50 text-primary group-hover:scale-110 transition-transform duration-300">
+                <div className="mb-6 inline-flex h-16 w-16 items-center justify-center rounded-2xl bg-blue-50 text-[#0066cc] group-hover:scale-110 transition-transform duration-300">
                   <span className="material-symbols-outlined text-4xl">cleaning_services</span>
                 </div>
                 <h3 className="mb-3 text-2xl font-display font-bold text-text-heading">Limpeza Profunda</h3>
                 <p className="text-text-muted leading-relaxed mb-4">
                   Removemos fungos e bactérias para proteger a saúde respiratória de quem você ama. Ar puro de verdade.
                 </p>
-                <a className="inline-flex items-center font-bold text-primary hover:text-sky-700" href="#">
+                <a className="inline-flex items-center font-bold text-[#0066cc] hover:text-[#0052a3]" href="#">
                   Saiba mais <span className="material-symbols-outlined ml-1 text-sm">arrow_forward</span>
                 </a>
               </div>
@@ -173,15 +173,17 @@ export default function App() {
         <section className="py-16 md:py-24 bg-white" id="galeria">
           <div className="container mx-auto max-w-[1200px] px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center mb-16">
-              <span className="text-primary font-bold tracking-wider uppercase text-sm bg-blue-100 px-3 py-1 rounded-full">Nosso Trabalho</span>
+              <span className="text-[#0066cc] font-bold tracking-wider uppercase text-sm bg-blue-100 px-3 py-1 rounded-full">Nosso Trabalho</span>
               <h2 className="font-display text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl text-text-heading">Instalação e Manutenção</h2>
               <p className="max-w-[700px] text-text-muted md:text-lg">
                 Confira alguns dos nossos serviços realizados com qualidade e profissionalismo.
               </p>
             </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
-              <div className="group relative rounded-3xl overflow-hidden shadow-soft hover:shadow-hover transition-all duration-300 aspect-[4/5]">
-                <img alt="Ambiente super agradável com ar condicionado" className="object-cover w-full h-full transform transition-transform duration-500 group-hover:scale-110" src="/images/ambiente-agradavel.jpg" />
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
+              <div className="group relative rounded-3xl overflow-hidden shadow-soft hover:shadow-hover transition-all duration-300">
+                <div className="aspect-[4/5] overflow-hidden">
+                  <img alt="Ambiente super agradável com ar condicionado" className="object-cover w-full h-full transform transition-transform duration-500 group-hover:scale-110" src="/images/ambiente-agradavel.png" />
+                </div>
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <div className="absolute bottom-0 left-0 right-0 p-6">
                     <p className="text-white font-bold text-lg">Ambiente Super Agradável</p>
@@ -189,8 +191,10 @@ export default function App() {
                   </div>
                 </div>
               </div>
-              <div className="group relative rounded-3xl overflow-hidden shadow-soft hover:shadow-hover transition-all duration-300 aspect-[4/5]">
-                <img alt="Instalação de ar condicionado split" className="object-cover w-full h-full transform transition-transform duration-500 group-hover:scale-110" src="/images/instalacao-split.jpg" />
+              <div className="group relative rounded-3xl overflow-hidden shadow-soft hover:shadow-hover transition-all duration-300">
+                <div className="aspect-[4/5] overflow-hidden">
+                  <img alt="Instalação de ar condicionado split" className="object-cover w-full h-full transform transition-transform duration-500 group-hover:scale-110" src="/images/instalacao-split.png" />
+                </div>
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <div className="absolute bottom-0 left-0 right-0 p-6">
                     <p className="text-white font-bold text-lg">Instalação Split</p>
@@ -198,8 +202,10 @@ export default function App() {
                   </div>
                 </div>
               </div>
-              <div className="group relative rounded-3xl overflow-hidden shadow-soft hover:shadow-hover transition-all duration-300 aspect-[4/5]">
-                <img alt="Manutenção preventiva de ar condicionado" className="object-cover w-full h-full transform transition-transform duration-500 group-hover:scale-110" src="/images/preventiva.jpg" />
+              <div className="group relative rounded-3xl overflow-hidden shadow-soft hover:shadow-hover transition-all duration-300">
+                <div className="aspect-[4/5] overflow-hidden">
+                  <img alt="Manutenção preventiva de ar condicionado" className="object-cover w-full h-full transform transition-transform duration-500 group-hover:scale-110" src="/images/preventiva.png" />
+                </div>
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <div className="absolute bottom-0 left-0 right-0 p-6">
                     <p className="text-white font-bold text-lg">Preventiva</p>
@@ -207,8 +213,10 @@ export default function App() {
                   </div>
                 </div>
               </div>
-              <div className="group relative rounded-3xl overflow-hidden shadow-soft hover:shadow-hover transition-all duration-300 aspect-[4/5]">
-                <img alt="Limpeza profunda de ar condicionado" className="object-cover w-full h-full transform transition-transform duration-500 group-hover:scale-110" src="/images/limpeza-profunda.jpg" />
+              <div className="group relative rounded-3xl overflow-hidden shadow-soft hover:shadow-hover transition-all duration-300">
+                <div className="aspect-[4/5] overflow-hidden">
+                  <img alt="Limpeza profunda de ar condicionado" className="object-cover w-full h-full transform transition-transform duration-500 group-hover:scale-110" src="/images/limpeza-profunda.png" />
+                </div>
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <div className="absolute bottom-0 left-0 right-0 p-6">
                     <p className="text-white font-bold text-lg">Limpeza Profunda</p>
@@ -216,8 +224,10 @@ export default function App() {
                   </div>
                 </div>
               </div>
-              <div className="group relative rounded-3xl overflow-hidden shadow-soft hover:shadow-hover transition-all duration-300 aspect-[4/5]">
-                <img alt="Unidade externa de ar condicionado" className="object-cover w-full h-full transform transition-transform duration-500 group-hover:scale-110" src="/images/unidade-externa.jpg" />
+              <div className="group relative rounded-3xl overflow-hidden shadow-soft hover:shadow-hover transition-all duration-300">
+                <div className="aspect-[4/5] overflow-hidden">
+                  <img alt="Unidade externa de ar condicionado" className="object-cover w-full h-full transform transition-transform duration-500 group-hover:scale-110" src="/images/unidade-externa.png" />
+                </div>
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <div className="absolute bottom-0 left-0 right-0 p-6">
                     <p className="text-white font-bold text-lg">Unidade Externa</p>
