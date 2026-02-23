@@ -30,7 +30,7 @@ export default function App() {
         </div>
       </header>
       <main className="flex-1">
-        <section className="relative py-12 md:py-20 lg:py-24 overflow-hidden bg-gradient-to-b from-white to-sky-50" id="inicio">
+        <section className="relative py-12 md:py-20 lg:py-24 overflow-hidden bg-gradient-to-b from-white to-[#e6f2ff]" id="inicio">
           <div className="container relative mx-auto max-w-[1200px] px-4 md:px-6">
             <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 items-center">
               <div className="flex flex-col justify-center space-y-8 order-2 lg:order-1">
@@ -82,10 +82,10 @@ export default function App() {
               <div className="order-1 lg:order-2 relative mx-auto w-full max-w-[500px] lg:max-w-none">
                 <div className="relative rounded-[3rem] overflow-hidden shadow-2xl shadow-sky-900/10 bg-white p-3">
                   <div className="relative rounded-[2.5rem] overflow-hidden aspect-[4/5] md:aspect-square">
-                    <img alt="Família feliz em casa climatizada" className="object-cover w-full h-full transform transition-transform duration-700 hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDwjIThxaMpZsog4pUdwIaxrG6XOumXDH1jdan-_w7jrsOaI9-GkYa94Gj1seGicnkhmjqeOM2PAwcRODRlpXk4r8glBimyWJoCYNtbUwhFWQ7YxNB2EqzdGsbMnW3iUNxHFg5tUXCuj9PovAuk1P2kpqbwbobT41l8yFsd1n-s91Z3BlKVLs-7q5oR1ed_ZVmMoYgXfBEkbCHgI9Olf2N_UjEfxQ_ZEcUHvUYm5iKc7Guw_efyIq9bTp9N5MJaMfOejG5dd9cyg" referrerPolicy="no-referrer" />
+                    <img alt="Família feliz em casa climatizada" className="object-cover w-full h-full transform transition-transform duration-700 hover:scale-105" src="/images/familia.png" referrerPolicy="no-referrer" />
                     <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/60 to-transparent pt-24">
                       <div className="flex items-center gap-3 bg-white/95 backdrop-blur-sm p-4 rounded-2xl shadow-lg max-w-xs mx-auto">
-                        <div className="p-3 bg-blue-100 rounded-xl text-primary">
+                        <div className="p-3 bg-blue-100 rounded-xl text-[#0066cc]">
                           <span className="material-symbols-outlined">sentiment_very_satisfied</span>
                         </div>
                         <div>
@@ -120,7 +120,7 @@ export default function App() {
             </div>
           </div>
         </section>
-        <section className="py-16 md:py-24 bg-sky-50" id="servicos">
+        <section className="py-16 md:py-24 bg-[#e6f2ff]" id="servicos">
           <div className="container mx-auto max-w-[1200px] px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center mb-16">
               <span className="text-[#0066cc] font-bold tracking-wider uppercase text-sm bg-blue-100 px-3 py-1 rounded-full">O que fazemos</span>
@@ -238,7 +238,7 @@ export default function App() {
             </div>
           </div>
         </section>
-        <section className="py-16 md:py-24 bg-sky-50 relative overflow-hidden" id="areas">
+        <section className="py-16 md:py-24 bg-[#e6f2ff] relative overflow-hidden" id="areas">
           <div className="container relative mx-auto max-w-[1200px] px-4 md:px-6">
             <div className="grid gap-12 lg:grid-cols-2 items-center">
               <div className="relative h-[450px] w-full overflow-hidden rounded-[2.5rem] shadow-xl border-4 border-white">
@@ -282,7 +282,7 @@ export default function App() {
             </div>
           </div>
         </section>
-        <section className="py-16 md:py-24 bg-gradient-to-t from-sky-50 to-white">
+        <section className="py-16 md:py-24 bg-gradient-to-t from-[#e6f2ff] to-white">
           <div className="container mx-auto max-w-[1200px] px-4 md:px-6">
             <div className="mb-12 flex flex-col items-center text-center">
               <span className="mb-3 rounded-full bg-blue-100 px-4 py-1.5 text-sm font-bold text-primary uppercase tracking-wide">Depoimentos</span>
