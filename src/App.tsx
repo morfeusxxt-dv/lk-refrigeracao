@@ -5,17 +5,17 @@ export default function App() {
         <div className="container mx-auto max-w-[1200px] px-4 md:px-6">
           <div className="flex h-20 items-center justify-between">
             <div className="flex items-center gap-2">
-              <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary/10 text-primary">
+              <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[#0066cc]/10 text-[#0066cc]">
                 <span className="material-symbols-outlined text-2xl">ac_unit</span>
               </div>
-              <span className="font-display text-2xl font-bold tracking-tight text-primary">LK Refrigeração</span>
+              <span className="font-display text-2xl font-bold tracking-tight text-[#0066cc]">LK Refrigeração</span>
             </div>
             <nav className="hidden md:flex items-center gap-8">
-              <a className="text-base font-semibold text-text-muted hover:text-primary transition-colors" href="#inicio">Início</a>
-              <a className="text-base font-semibold text-text-muted hover:text-primary transition-colors" href="#servicos">Serviços</a>
-              <a className="text-base font-semibold text-text-muted hover:text-primary transition-colors" href="#galeria">Galeria</a>
-              <a className="text-base font-semibold text-text-muted hover:text-primary transition-colors" href="#areas">Áreas</a>
-              <a className="text-base font-semibold text-text-muted hover:text-primary transition-colors" href="#contato">Contato</a>
+              <a className="text-base font-semibold text-text-muted hover:text-[#0066cc] transition-colors" href="#inicio">Início</a>
+              <a className="text-base font-semibold text-text-muted hover:text-[#0066cc] transition-colors" href="#servicos">Serviços</a>
+              <a className="text-base font-semibold text-text-muted hover:text-[#0066cc] transition-colors" href="#galeria">Galeria</a>
+              <a className="text-base font-semibold text-text-muted hover:text-[#0066cc] transition-colors" href="#areas">Áreas</a>
+              <a className="text-base font-semibold text-text-muted hover:text-[#0066cc] transition-colors" href="#contato">Contato</a>
             </nav>
             <div className="hidden md:flex items-center gap-4">
               <a href="https://wa.me/5598982106557" target="_blank" rel="noopener noreferrer" className="flex h-12 items-center justify-center rounded-full bg-[#25D366] px-6 text-base font-bold text-white transition-transform hover:scale-105 shadow-md shadow-green-200">
@@ -47,11 +47,11 @@ export default function App() {
                   </p>
                 </div>
                 <div className="flex flex-col gap-4 sm:flex-row">
-                  <button className="h-14 px-8 rounded-full bg-primary hover:bg-sky-600 text-white font-bold text-lg flex items-center justify-center transition-all shadow-lg shadow-sky-200 hover:shadow-sky-300">
+                  <button className="h-14 px-8 rounded-full bg-[#0066cc] hover:bg-[#0052a3] text-white font-bold text-lg flex items-center justify-center transition-all shadow-lg shadow-[#0066cc]/20 hover:shadow-[#0066cc]/30">
                     <span className="material-symbols-outlined mr-2">calendar_month</span>
                     Agendar Visita
                   </button>
-                  <button className="h-14 px-8 rounded-full border-2 border-sky-100 bg-white hover:border-primary hover:text-primary text-text-muted font-bold flex items-center justify-center transition-colors">
+                  <button className="h-14 px-8 rounded-full border-2 border-sky-100 bg-white hover:border-[#0066cc] hover:text-[#0066cc] text-text-muted font-bold flex items-center justify-center transition-colors">
                     Conhecer Serviços
                   </button>
                 </div>
