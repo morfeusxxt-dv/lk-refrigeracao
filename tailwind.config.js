@@ -5,9 +5,9 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: "#0284c7", // Sky blue 600
-        secondary: "#38bdf8", // Sky blue 400
-        accent: "#f0f9ff", // Sky blue 50
+        primary: "#0066cc", // Stronger blue
+        secondary: "#0052a3", // Darker blue for contrast
+        accent: "#e6f2ff", // Light blue background
         "background-light": "#ffffff",
         "background-dark": "#f8fafc", // Slate 50
         "card-light": "#ffffff",
@@ -29,7 +29,7 @@ export default {
       },
       boxShadow: {
         soft: "0 4px 20px -2px rgba(0, 0, 0, 0.05)",
-        hover: "0 10px 25px -5px rgba(2, 132, 199, 0.15)",
+        hover: "0 10px 25px -5px rgba(0, 102, 204, 0.15)",
       },
     },
   },
