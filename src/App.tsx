@@ -79,8 +79,8 @@ export default function App() {
                   </div>
                 </div>
               </div>
-              <div className="order-1 lg:order-2 relative mx-auto w-full max-w-[600px] lg:max-w-none">
-                <div className="relative rounded-[3rem] overflow-hidden shadow-2xl shadow-sky-900/10 bg-white p-4">
+              <div className="order-1 lg:order-2 relative mx-auto w-full max-w-[700px] lg:max-w-none">
+                <div className="relative rounded-[3rem] overflow-hidden shadow-2xl shadow-sky-900/10 bg-white p-6">
                   <div className="relative rounded-[2.5rem] overflow-hidden aspect-[4/5] md:aspect-square">
                     <img alt="Família feliz em casa climatizada" className="object-cover w-full h-full transform transition-transform duration-700 hover:scale-105" src="/images/familia.png" referrerPolicy="no-referrer" />
                     <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/60 to-transparent pt-24">
