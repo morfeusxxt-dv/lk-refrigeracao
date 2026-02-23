@@ -181,7 +181,7 @@ export default function App() {
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
               <div className="group relative rounded-3xl overflow-hidden shadow-soft hover:shadow-hover transition-all duration-300 aspect-[4/5]">
-                <img alt="Ambiente super agradável com ar condicionado" className="object-cover w-full h-full transform transition-transform duration-500 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDwjIThxaMpZsog4pUdwIaxrG6XOumXDH1jdan-_w7jrsOaI9-GkYa94Gj1seGicnkhmjqeOM2PAwcRODRlpXk4r8glBimyWJoCYNtbUwhFWQ7YxNB2EqzdGsbMnW3iUNxHFg5tUXCuj9PovAuk1P2kpqbwbobT41l8yFsd1n-s91Z3BlKVLs-7q5oR1ed_ZVmMoYgXfBEkbCHgI9Olf2N_UjEfxQ_ZEcUHvUYm5iKc7Guw_efyIq9bTp9N5MJaMfOejG5dd9cyg" />
+                <img alt="Ambiente super agradável com ar condicionado" className="object-cover w-full h-full transform transition-transform duration-500 group-hover:scale-110" src="/images/ambiente-agradavel.jpg" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <div className="absolute bottom-0 left-0 right-0 p-6">
                     <p className="text-white font-bold text-lg">Ambiente Super Agradável</p>
@@ -190,7 +190,7 @@ export default function App() {
                 </div>
               </div>
               <div className="group relative rounded-3xl overflow-hidden shadow-soft hover:shadow-hover transition-all duration-300 aspect-[4/5]">
-                <img alt="Instalação de ar condicionado split" className="object-cover w-full h-full transform transition-transform duration-500 group-hover:scale-110" src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?w=600&h=750&fit=crop" />
+                <img alt="Instalação de ar condicionado split" className="object-cover w-full h-full transform transition-transform duration-500 group-hover:scale-110" src="/images/instalacao-split.jpg" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <div className="absolute bottom-0 left-0 right-0 p-6">
                     <p className="text-white font-bold text-lg">Instalação Split</p>
@@ -199,7 +199,7 @@ export default function App() {
                 </div>
               </div>
               <div className="group relative rounded-3xl overflow-hidden shadow-soft hover:shadow-hover transition-all duration-300 aspect-[4/5]">
-                <img alt="Manutenção preventiva de ar condicionado" className="object-cover w-full h-full transform transition-transform duration-500 group-hover:scale-110" src="https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=600&h=750&fit=crop" />
+                <img alt="Manutenção preventiva de ar condicionado" className="object-cover w-full h-full transform transition-transform duration-500 group-hover:scale-110" src="/images/preventiva.jpg" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <div className="absolute bottom-0 left-0 right-0 p-6">
                     <p className="text-white font-bold text-lg">Preventiva</p>
@@ -208,7 +208,7 @@ export default function App() {
                 </div>
               </div>
               <div className="group relative rounded-3xl overflow-hidden shadow-soft hover:shadow-hover transition-all duration-300 aspect-[4/5]">
-                <img alt="Limpeza profunda de ar condicionado" className="object-cover w-full h-full transform transition-transform duration-500 group-hover:scale-110" src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=600&h=750&fit=crop" />
+                <img alt="Limpeza profunda de ar condicionado" className="object-cover w-full h-full transform transition-transform duration-500 group-hover:scale-110" src="/images/limpeza-profunda.jpg" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <div className="absolute bottom-0 left-0 right-0 p-6">
                     <p className="text-white font-bold text-lg">Limpeza Profunda</p>
@@ -217,7 +217,7 @@ export default function App() {
                 </div>
               </div>
               <div className="group relative rounded-3xl overflow-hidden shadow-soft hover:shadow-hover transition-all duration-300 aspect-[4/5]">
-                <img alt="Unidade externa de ar condicionado" className="object-cover w-full h-full transform transition-transform duration-500 group-hover:scale-110" src="https://images.unsplash.com/photo-1631545806609-05fa10b0a7b1?w=600&h=750&fit=crop" />
+                <img alt="Unidade externa de ar condicionado" className="object-cover w-full h-full transform transition-transform duration-500 group-hover:scale-110" src="/images/unidade-externa.jpg" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <div className="absolute bottom-0 left-0 right-0 p-6">
                     <p className="text-white font-bold text-lg">Unidade Externa</p>
