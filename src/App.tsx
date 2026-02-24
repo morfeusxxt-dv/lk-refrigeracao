@@ -68,9 +68,9 @@ export default function App() {
                     Atendimento rápido em São Luís
                   </div>
                   <h1 className="font-display text-4xl font-bold tracking-tight text-text-heading sm:text-5xl xl:text-6xl leading-[1.1]">
-                    <span className="inline-flex flex-col items-center justify-center gap-4 sm:flex-row">
-                      <img alt="LK Refrigeração" className="h-12 w-auto sm:h-14" src="/images/logo.png" />
-                      <span>Conforto e frescor para o seu lar</span>
+                    <span className="inline-flex flex-row flex-wrap items-center justify-center gap-x-5 gap-y-3">
+                      <img alt="LK Refrigeração" className="h-16 w-auto sm:h-20 md:h-24 shrink-0 object-contain" src="/images/logo.png" />
+                      <span className="text-balance">Conforto e frescor para o seu lar</span>
                     </span>
                   </h1>
                   <p className="max-w-[600px] text-text-muted text-lg md:text-xl leading-relaxed font-medium">
