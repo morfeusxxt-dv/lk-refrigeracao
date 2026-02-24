@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 export default function Manutencao() {
   return (
     <div className="py-12 md:py-16">
-      <div className="mx-auto w-full max-w-[110rem] px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto w-full max-w-[110rem] 2xl:max-w-[140rem] px-4 sm:px-6 lg:px-8 2xl:px-12">
         <div className="mb-6">
           <Link
             to="/#servicos"

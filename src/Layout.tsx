@@ -18,7 +18,7 @@ export default function Layout() {
   return (
     <div className="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden bg-background-light text-text-main font-body antialiased">
       <header className="sticky top-0 z-50 w-full border-b border-slate-100 bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/80 shadow-sm">
-        <div className="mx-auto w-full max-w-[110rem] px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto w-full max-w-[110rem] 2xl:max-w-[140rem] px-4 sm:px-6 lg:px-8 2xl:px-12">
           <div className="flex items-center justify-between py-4">
             <a href="/#inicio" className="flex items-center">
               <img alt="LK Refrigeração" className="h-12 w-auto" src="/images/logo.png" />
@@ -116,7 +116,7 @@ export default function Layout() {
       </main>
 
       <footer className="bg-white border-t border-slate-100">
-        <div className="mx-auto w-full max-w-[110rem] px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto w-full max-w-[110rem] 2xl:max-w-[140rem] px-4 sm:px-6 lg:px-8 2xl:px-12">
           <div className="py-12">
             <div className="grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-8">
               <div className="space-y-6">

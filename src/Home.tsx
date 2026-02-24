@@ -5,7 +5,7 @@ export default function Home() {
         className="relative py-12 md:py-20 lg:py-24 overflow-hidden bg-gradient-to-b from-white to-[#e6f2ff]"
         id="inicio"
       >
-        <div className="relative mx-auto w-full max-w-[110rem] px-4 sm:px-6 lg:px-8">
+        <div className="relative mx-auto w-full max-w-[110rem] 2xl:max-w-[140rem] px-4 sm:px-6 lg:px-8 2xl:px-12">
           <div className="grid gap-10 lg:grid-cols-2 lg:items-center">
             <div className="flex flex-col items-center text-center lg:items-start lg:text-left">
               <div className="flex w-full flex-col justify-center space-y-8">
@@ -90,7 +90,7 @@ export default function Home() {
                 <img
                   alt="LK Refrigeração"
                   src="/images/logo.png"
-                  className="relative w-[22rem] xl:w-[26rem] 2xl:w-[30rem] h-auto object-contain drop-shadow"
+                  className="relative w-[22rem] xl:w-[28rem] 2xl:w-[38rem] h-auto object-contain drop-shadow"
                 />
               </div>
             </div>
@@ -99,7 +99,7 @@ export default function Home() {
       </section>
 
       <section className="bg-white py-10 border-y border-slate-100">
-        <div className="mx-auto w-full max-w-[110rem] px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto w-full max-w-[110rem] 2xl:max-w-[140rem] px-4 sm:px-6 lg:px-8 2xl:px-12">
           <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16 text-center md:text-left opacity-80">
             <div className="flex items-center gap-3">
               <span className="material-symbols-outlined text-4xl text-[#0066cc]">verified_user</span>
@@ -118,7 +118,7 @@ export default function Home() {
       </section>
 
       <section className="py-16 md:py-24 bg-[#e6f2ff]" id="servicos">
-        <div className="mx-auto w-full max-w-[110rem] px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto w-full max-w-[110rem] 2xl:max-w-[140rem] px-4 sm:px-6 lg:px-8 2xl:px-12">
           <div className="flex flex-col items-center justify-center space-y-4 text-center lg:items-start lg:text-left mb-16">
             <span className="text-[#0066cc] font-bold tracking-wider uppercase text-sm bg-blue-100 px-3 py-1 rounded-full">O que fazemos</span>
             <h2 className="font-display text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl 2xl:text-6xl text-text-heading">Cuidamos do seu conforto</h2>
@@ -177,7 +177,7 @@ export default function Home() {
       </section>
 
       <section className="py-16 md:py-24 bg-white" id="galeria">
-        <div className="mx-auto w-full max-w-[110rem] px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto w-full max-w-[110rem] 2xl:max-w-[140rem] px-4 sm:px-6 lg:px-8 2xl:px-12">
           <div className="flex flex-col items-center justify-center space-y-4 text-center lg:items-start lg:text-left mb-16">
             <span className="text-[#0066cc] font-bold tracking-wider uppercase text-sm bg-blue-100 px-3 py-1 rounded-full">Nosso Trabalho</span>
             <h2 className="font-display text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl 2xl:text-6xl text-text-heading">Instalação e Manutenção</h2>
@@ -276,7 +276,7 @@ export default function Home() {
       </section>
 
       <section className="py-16 md:py-24 bg-[#e6f2ff] relative overflow-hidden" id="areas">
-        <div className="relative mx-auto w-full max-w-[110rem] px-4 sm:px-6 lg:px-8">
+        <div className="relative mx-auto w-full max-w-[110rem] 2xl:max-w-[140rem] px-4 sm:px-6 lg:px-8 2xl:px-12">
           <div className="grid gap-12 lg:grid-cols-2 items-center">
             <div className="relative h-[320px] sm:h-[400px] lg:h-[450px] w-full overflow-hidden rounded-[2.5rem] shadow-xl border-4 border-white">
               <img
@@ -333,7 +333,7 @@ export default function Home() {
       </section>
 
       <section className="py-16 md:py-24 bg-gradient-to-t from-[#e6f2ff] to-white">
-        <div className="mx-auto w-full max-w-[110rem] px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto w-full max-w-[110rem] 2xl:max-w-[140rem] px-4 sm:px-6 lg:px-8 2xl:px-12">
           <div className="mb-12 flex flex-col items-center text-center">
             <span className="mb-3 rounded-full bg-blue-100 px-4 py-1.5 text-sm font-bold text-[#0066cc] uppercase tracking-wide">Depoimentos</span>
             <h2 className="font-display text-3xl font-bold tracking-tight sm:text-4xl text-text-heading">Famílias Satisfeitas</h2>
@@ -428,7 +428,7 @@ export default function Home() {
       </section>
 
       <section className="py-16 bg-white relative border-t border-slate-100" id="contato">
-        <div className="mx-auto w-full max-w-[110rem] px-4 sm:px-6 lg:px-8 relative z-10">
+        <div className="mx-auto w-full max-w-[110rem] 2xl:max-w-[140rem] px-4 sm:px-6 lg:px-8 2xl:px-12 relative z-10">
           <div className="rounded-[2.5rem] bg-gradient-to-br from-[#0066cc] to-[#0052a3] p-8 md:p-16 text-center shadow-xl overflow-hidden relative">
             <div className="absolute top-0 left-0 w-72 h-72 sm:w-96 sm:h-96 bg-white/10 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2"></div>
             <div className="absolute bottom-0 right-0 w-72 h-72 sm:w-96 sm:h-96 bg-blue-900/10 rounded-full blur-3xl translate-x-1/2 translate-y-1/2"></div>
