@@ -23,8 +23,9 @@ export default function Instalacao() {
               Instalação
             </h1>
             <p className="mt-4 text-text-muted text-base sm:text-lg leading-relaxed">
-              Explicação completa do serviço de instalação. Aqui você pode descrever como é feita a avaliação do local,
-              quais materiais são usados, como você protege a casa do cliente e como fica o acabamento.
+              Realizamos a instalação completa do seu ar-condicionado com avaliação do melhor ponto para conforto, boa
+              circulação de ar e acabamento limpo. A equipe organiza o ambiente, protege paredes e móveis e finaliza com
+              testes para garantir o funcionamento correto e seguro.
             </p>
 
             <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -38,9 +39,6 @@ export default function Instalacao() {
                     decoding="async"
                   />
                 </div>
-                <div className="p-5">
-                  <p className="text-text-muted">Adicione aqui a descrição da foto 1.</p>
-                </div>
               </div>
               <div className="rounded-2xl border border-slate-100 overflow-hidden">
                 <div className="aspect-[16/9] bg-sky-100">
@@ -51,9 +49,6 @@ export default function Instalacao() {
                     loading="lazy"
                     decoding="async"
                   />
-                </div>
-                <div className="p-5">
-                  <p className="text-text-muted">Adicione aqui a descrição da foto 2.</p>
                 </div>
               </div>
             </div>

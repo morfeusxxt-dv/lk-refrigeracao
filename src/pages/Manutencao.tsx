@@ -23,7 +23,9 @@ export default function Manutencao() {
               Manutenção
             </h1>
             <p className="mt-4 text-text-muted text-base sm:text-lg leading-relaxed">
-              Explique aqui como funciona o diagnóstico, manutenção preventiva/corretiva, troca de peças e cuidados com limpeza.
+              Fazemos manutenção preventiva e corretiva para seu equipamento voltar a gelar com eficiência. Realizamos
+              diagnóstico, limpeza dos componentes essenciais, verificação de vazamentos e testes de funcionamento para
+              reduzir consumo e evitar paradas inesperadas.
             </p>
 
             <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -37,22 +39,16 @@ export default function Manutencao() {
                     decoding="async"
                   />
                 </div>
-                <div className="p-5">
-                  <p className="text-text-muted">Adicione aqui a descrição da foto 1.</p>
-                </div>
               </div>
               <div className="rounded-2xl border border-slate-100 overflow-hidden">
                 <div className="aspect-[16/9] bg-sky-100">
                   <img
-                    src="/images/ambiente-agradavel.png"
+                    src="/images/unidade-externa.png"
                     alt="Exemplo de manutenção"
                     className="h-full w-full object-cover"
                     loading="lazy"
                     decoding="async"
                   />
-                </div>
-                <div className="p-5">
-                  <p className="text-text-muted">Adicione aqui a descrição da foto 2.</p>
                 </div>
               </div>
             </div>

@@ -23,7 +23,9 @@ export default function LimpezaProfunda() {
               Limpeza Profunda
             </h1>
             <p className="mt-4 text-text-muted text-base sm:text-lg leading-relaxed">
-              Descreva aqui o passo a passo da higienização, produtos usados, como melhora o ar e cuidados para saúde respiratória.
+              A higienização profunda remove sujeira acumulada, fungos e odores, ajudando na qualidade do ar e no
+              desempenho do aparelho. Fazemos a limpeza completa de componentes internos e testes para garantir ar mais
+              puro e funcionamento eficiente.
             </p>
 
             <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -37,22 +39,16 @@ export default function LimpezaProfunda() {
                     decoding="async"
                   />
                 </div>
-                <div className="p-5">
-                  <p className="text-text-muted">Adicione aqui a descrição da foto 1.</p>
-                </div>
               </div>
               <div className="rounded-2xl border border-slate-100 overflow-hidden">
                 <div className="aspect-[16/9] bg-sky-100">
                   <img
-                    src="/images/ambiente-agradavel.png"
+                    src="/images/instalacao-split.png"
                     alt="Exemplo de limpeza profunda"
                     className="h-full w-full object-cover"
                     loading="lazy"
                     decoding="async"
                   />
-                </div>
-                <div className="p-5">
-                  <p className="text-text-muted">Adicione aqui a descrição da foto 2.</p>
                 </div>
               </div>
             </div>
