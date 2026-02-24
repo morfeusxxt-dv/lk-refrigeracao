@@ -6,3 +6,9 @@
   --secondary: #0052a3;
   --accent: #e6f2ff;
 }
+
+:where(a, button, input, textarea, select):focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(0, 102, 204, 0.25);
+  border-radius: 9999px;
+}
