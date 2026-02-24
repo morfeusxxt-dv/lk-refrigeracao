@@ -6,8 +6,8 @@ export default function App() {
   return (
     <div className="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden bg-background-light text-text-main font-body antialiased">
       <header className="sticky top-0 z-50 w-full border-b border-slate-100 bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/80 shadow-sm">
-        <div className="container mx-auto max-w-[1200px] px-4 md:px-6">
-          <div className="flex h-20 items-center justify-between">
+        <div className="mx-auto w-full max-w-screen-xl px-4 sm:px-6 lg:px-8">
+          <div className="flex items-center justify-between py-4">
             <a href="#inicio" className="flex items-center">
               <img alt="LK Refrigeração" className="h-12 w-auto" src="/images/logo.png" />
             </a>
@@ -59,16 +59,16 @@ export default function App() {
       </header>
       <main className="flex-1">
         <section className="relative py-12 md:py-20 lg:py-24 overflow-hidden bg-gradient-to-b from-white to-[#e6f2ff]" id="inicio">
-          <div className="container relative mx-auto max-w-[1200px] px-4 md:px-6">
-            <div className="flex flex-col items-center text-center">
-              <div className="flex flex-col justify-center space-y-8 max-w-[850px]">
+          <div className="relative mx-auto w-full max-w-screen-xl px-4 sm:px-6 lg:px-8">
+            <div className="flex flex-col items-center text-center lg:items-start lg:text-left">
+              <div className="flex w-full flex-col justify-center space-y-8 max-w-3xl">
                 <div className="space-y-6">
                   <div className="inline-flex items-center rounded-full border border-sky-100 bg-white px-4 py-1.5 text-sm font-bold text-[#0066cc] shadow-sm">
                     <span className="flex h-2.5 w-2.5 rounded-full bg-green-400 mr-2 animate-pulse"></span>
                     Atendimento rápido em São Luís
                   </div>
                   <h1 className="font-display text-4xl font-bold tracking-tight text-text-heading sm:text-5xl xl:text-6xl leading-[1.1]">
-                    <span className="inline-flex flex-row flex-wrap items-center justify-center gap-x-5 gap-y-3">
+                    <span className="inline-flex flex-row flex-wrap items-center justify-center gap-x-5 gap-y-3 lg:justify-start">
                       <img alt="LK Refrigeração" className="h-16 w-auto sm:h-20 md:h-24 shrink-0 object-contain" src="/images/logo.png" />
                       <span className="text-balance">Conforto e frescor para o seu lar</span>
                     </span>
@@ -114,7 +114,7 @@ export default function App() {
           </div>
         </section>
         <section className="bg-white py-10 border-y border-slate-100">
-          <div className="container mx-auto max-w-[1200px] px-4 md:px-6">
+          <div className="mx-auto w-full max-w-screen-xl px-4 sm:px-6 lg:px-8">
             <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16 text-center md:text-left opacity-80">
               <div className="flex items-center gap-3">
                 <span className="material-symbols-outlined text-4xl text-[#0066cc]">verified_user</span>
@@ -132,8 +132,8 @@ export default function App() {
           </div>
         </section>
         <section className="py-16 md:py-24 bg-[#e6f2ff]" id="servicos">
-          <div className="container mx-auto max-w-[1200px] px-4 md:px-6">
-            <div className="flex flex-col items-center justify-center space-y-4 text-center mb-16">
+          <div className="mx-auto w-full max-w-screen-xl px-4 sm:px-6 lg:px-8">
+            <div className="flex flex-col items-center justify-center space-y-4 text-center lg:items-start lg:text-left mb-16">
               <span className="text-[#0066cc] font-bold tracking-wider uppercase text-sm bg-blue-100 px-3 py-1 rounded-full">O que fazemos</span>
               <h2 className="font-display text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl text-text-heading">Cuidamos do seu conforto</h2>
               <p className="max-w-[700px] text-text-muted md:text-lg">
@@ -182,8 +182,8 @@ export default function App() {
         </section>
         {/* Galeria de Imagens */}
         <section className="py-16 md:py-24 bg-white" id="galeria">
-          <div className="container mx-auto max-w-[1200px] px-4 md:px-6">
-            <div className="flex flex-col items-center justify-center space-y-4 text-center mb-16">
+          <div className="mx-auto w-full max-w-screen-xl px-4 sm:px-6 lg:px-8">
+            <div className="flex flex-col items-center justify-center space-y-4 text-center lg:items-start lg:text-left mb-16">
               <span className="text-[#0066cc] font-bold tracking-wider uppercase text-sm bg-blue-100 px-3 py-1 rounded-full">Nosso Trabalho</span>
               <h2 className="font-display text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl text-text-heading">Instalação e Manutenção</h2>
               <p className="max-w-[700px] text-text-muted md:text-lg">
@@ -250,9 +250,9 @@ export default function App() {
           </div>
         </section>
         <section className="py-16 md:py-24 bg-[#e6f2ff] relative overflow-hidden" id="areas">
-          <div className="container relative mx-auto max-w-[1200px] px-4 md:px-6">
+          <div className="relative mx-auto w-full max-w-screen-xl px-4 sm:px-6 lg:px-8">
             <div className="grid gap-12 lg:grid-cols-2 items-center">
-              <div className="relative h-[450px] w-full overflow-hidden rounded-[2.5rem] shadow-xl border-4 border-white">
+              <div className="relative h-[320px] sm:h-[400px] lg:h-[450px] w-full overflow-hidden rounded-[2.5rem] shadow-xl border-4 border-white">
                 <img alt="Técnico sorrindo em atendimento" className="object-cover w-full h-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB2MiWjgGFxDdRIZDqGMqTHAae6La2gy2DsMJ-P6nEs-F3-mMMTGpvtxn-1VOf4wBZYStCdgZpBwKnVGy6pJee3EKGiiGcEmx9phs2wSorKwtSG9e7bZgkv9Db3jH0ylqUusDVZv2upQsjGhK_onI8xTvdgPR32ILvGMzGX-76yFT6iqlnTXLSol3zIO_xSdKyUdCiYKvLFAs264UBb31tFwhqesjwG-Cb36Jg7pTdmulf_SAzbBpcXQIFgSRsYBqAWAYrsX-puHA" referrerPolicy="no-referrer" />
                 <div className="absolute bottom-6 left-6 right-6 bg-white/95 backdrop-blur-md p-6 rounded-2xl shadow-lg">
                   <div className="flex items-center gap-4">
@@ -294,7 +294,7 @@ export default function App() {
           </div>
         </section>
         <section className="py-16 md:py-24 bg-gradient-to-t from-[#e6f2ff] to-white">
-          <div className="container mx-auto max-w-[1200px] px-4 md:px-6">
+          <div className="mx-auto w-full max-w-screen-xl px-4 sm:px-6 lg:px-8">
             <div className="mb-12 flex flex-col items-center text-center">
               <span className="mb-3 rounded-full bg-blue-100 px-4 py-1.5 text-sm font-bold text-[#0066cc] uppercase tracking-wide">Depoimentos</span>
               <h2 className="font-display text-3xl font-bold tracking-tight sm:text-4xl text-text-heading">Famílias Satisfeitas</h2>
@@ -361,12 +361,12 @@ export default function App() {
           </div>
         </section>
         <section className="py-16 bg-white relative border-t border-slate-100" id="contato">
-          <div className="container mx-auto max-w-[1200px] px-4 md:px-6 relative z-10">
+          <div className="mx-auto w-full max-w-screen-xl px-4 sm:px-6 lg:px-8 relative z-10">
             <div className="rounded-[2.5rem] bg-gradient-to-br from-[#0066cc] to-[#0052a3] p-8 md:p-16 text-center shadow-xl overflow-hidden relative">
-              <div className="absolute top-0 left-0 w-96 h-96 bg-white/10 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2"></div>
-              <div className="absolute bottom-0 right-0 w-96 h-96 bg-blue-900/10 rounded-full blur-3xl translate-x-1/2 translate-y-1/2"></div>
+              <div className="absolute top-0 left-0 w-72 h-72 sm:w-96 sm:h-96 bg-white/10 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2"></div>
+              <div className="absolute bottom-0 right-0 w-72 h-72 sm:w-96 sm:h-96 bg-blue-900/10 rounded-full blur-3xl translate-x-1/2 translate-y-1/2"></div>
               <h2 className="font-display text-3xl font-bold tracking-tight text-white sm:text-5xl mb-6 relative z-10">Sua casa merece esse conforto</h2>
-              <p className="mx-auto max-w-[600px] text-blue-50 text-xl mb-10 font-medium relative z-10">
+              <p className="mx-auto max-w-[600px] text-blue-50 text-lg sm:text-xl mb-10 font-medium relative z-10">
                 Fale conosco agora mesmo. Respondemos rapidinho no WhatsApp para agendar sua visita.
               </p>
               <div className="flex flex-col sm:flex-row gap-6 justify-center relative z-10">
