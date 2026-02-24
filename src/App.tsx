@@ -68,7 +68,10 @@ export default function App() {
                     Atendimento rápido em São Luís
                   </div>
                   <h1 className="font-display text-4xl font-bold tracking-tight text-text-heading sm:text-5xl xl:text-6xl leading-[1.1]">
-                    Conforto e frescor para o seu lar
+                    <span className="inline-flex flex-col items-center justify-center gap-4 sm:flex-row">
+                      <img alt="LK Refrigeração" className="h-12 w-auto sm:h-14" src="/images/logo.png" />
+                      <span>Conforto e frescor para o seu lar</span>
+                    </span>
                   </h1>
                   <p className="max-w-[600px] text-text-muted text-lg md:text-xl leading-relaxed font-medium">
                     Deixe sua casa na temperatura ideal. Técnicos de confiança para instalação e manutenção do seu ar-condicionado, com carinho e eficiência.
@@ -146,7 +149,7 @@ export default function App() {
                 <p className="text-text-muted leading-relaxed mb-4">
                   Instalamos seu aparelho novo com todo cuidado, sem sujeira e no local ideal para refrescar sua casa inteira.
                 </p>
-                <a className="inline-flex items-center font-bold text-[#0066cc] hover:text-[#0052a3]" href="#contato">
+                <a className="inline-flex items-center font-bold text-[#0066cc] hover:text-[#0052a3]" href="/servicos/instalacao.html" target="_blank" rel="noopener noreferrer">
                   Saiba mais <span className="material-symbols-outlined ml-1 text-sm">arrow_forward</span>
                 </a>
               </div>
@@ -158,7 +161,7 @@ export default function App() {
                 <p className="text-text-muted leading-relaxed mb-4">
                   Seu ar parou de gelar? Fazemos o conserto rápido para devolver o conforto da sua família.
                 </p>
-                <a className="inline-flex items-center font-bold text-[#0066cc] hover:text-[#0052a3]" href="#contato">
+                <a className="inline-flex items-center font-bold text-[#0066cc] hover:text-[#0052a3]" href="/servicos/manutencao.html" target="_blank" rel="noopener noreferrer">
                   Saiba mais <span className="material-symbols-outlined ml-1 text-sm">arrow_forward</span>
                 </a>
               </div>
@@ -170,7 +173,7 @@ export default function App() {
                 <p className="text-text-muted leading-relaxed mb-4">
                   Removemos fungos e bactérias para proteger a saúde respiratória de quem você ama. Ar puro de verdade.
                 </p>
-                <a className="inline-flex items-center font-bold text-[#0066cc] hover:text-[#0052a3]" href="#contato">
+                <a className="inline-flex items-center font-bold text-[#0066cc] hover:text-[#0052a3]" href="/servicos/limpeza-profunda.html" target="_blank" rel="noopener noreferrer">
                   Saiba mais <span className="material-symbols-outlined ml-1 text-sm">arrow_forward</span>
                 </a>
               </div>

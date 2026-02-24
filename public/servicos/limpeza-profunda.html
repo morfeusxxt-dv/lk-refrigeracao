@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Limpeza Profunda | LK Refrigeração</title>
+    <style>
+      :root {
+        --primary: #0066cc;
+        --secondary: #0052a3;
+        --bg: #e6f2ff;
+        --text: #0f172a;
+        --muted: #475569;
+        --card: #ffffff;
+        --border: rgba(15, 23, 42, 0.08);
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+        color: var(--text);
+        background: linear-gradient(180deg, #fff 0%, var(--bg) 100%);
+      }
+      .container {
+        max-width: 980px;
+        margin: 0 auto;
+        padding: 24px 16px 56px;
+      }
+      header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+        padding: 12px 0 24px;
+      }
+      header img { height: 44px; width: auto; }
+      .back {
+        text-decoration: none;
+        color: var(--primary);
+        font-weight: 800;
+      }
+      .hero {
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 24px;
+        padding: 24px;
+        box-shadow: 0 10px 30px rgba(0, 102, 204, 0.12);
+      }
+      h1 { margin: 0 0 8px; font-size: 32px; }
+      p { margin: 0; color: var(--muted); line-height: 1.6; }
+      .grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 16px;
+        margin-top: 18px;
+      }
+      .card {
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 18px;
+        overflow: hidden;
+      }
+      .media {
+        aspect-ratio: 16/9;
+        background: #dbeafe;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--secondary);
+        font-weight: 900;
+      }
+      .card-body { padding: 16px; }
+      .badge {
+        display: inline-block;
+        padding: 6px 10px;
+        border-radius: 999px;
+        background: rgba(0, 102, 204, 0.10);
+        color: var(--primary);
+        font-weight: 800;
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+        margin-bottom: 10px;
+      }
+      @media (min-width: 768px) {
+        .grid { grid-template-columns: 1fr 1fr; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <img src="/images/logo.png" alt="LK Refrigeração" />
+        <a class="back" href="/">Voltar para o site</a>
+      </header>
+
+      <section class="hero">
+        <span class="badge">Serviço</span>
+        <h1>Limpeza Profunda</h1>
+        <p>
+          Aqui você vai colocar as fotos e a explicação detalhada do serviço de limpeza profunda.
+          Você pode editar este arquivo em <strong>public/servicos/limpeza-profunda.html</strong>.
+        </p>
+
+        <div class="grid">
+          <article class="card">
+            <div class="media">Foto 1</div>
+            <div class="card-body">
+              <p>Descrição da foto 1 (edite aqui).</p>
+            </div>
+          </article>
+          <article class="card">
+            <div class="media">Foto 2</div>
+            <div class="card-body">
+              <p>Descrição da foto 2 (edite aqui).</p>
+            </div>
+          </article>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
