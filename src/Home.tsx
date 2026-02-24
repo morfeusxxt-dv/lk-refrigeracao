@@ -6,86 +6,92 @@ export default function Home() {
         id="inicio"
       >
         <div className="relative mx-auto w-full max-w-[110rem] px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col items-center text-center lg:items-start lg:text-left">
-            <div className="flex w-full flex-col justify-center space-y-8 max-w-3xl">
-              <div className="space-y-6">
-                <div className="inline-flex items-center rounded-full border border-sky-100 bg-white px-4 py-1.5 text-sm font-bold text-[#0066cc] shadow-sm">
-                  <span className="flex h-2.5 w-2.5 rounded-full bg-green-400 mr-2 animate-pulse"></span>
-                  Atendimento rápido em São Luís
-                </div>
-                <h1 className="font-display text-4xl font-bold tracking-tight text-text-heading sm:text-5xl xl:text-6xl 2xl:text-7xl leading-[1.1]">
-                  <span className="inline-flex flex-row flex-wrap items-center justify-center gap-x-5 gap-y-3 lg:justify-start">
-                    <img
-                      alt="LK Refrigeração"
-                      className="h-16 w-auto sm:h-20 md:h-24 shrink-0 object-contain"
-                      src="/images/logo.png"
-                    />
+          <div className="grid gap-10 lg:grid-cols-2 lg:items-center">
+            <div className="flex flex-col items-center text-center lg:items-start lg:text-left">
+              <div className="flex w-full flex-col justify-center space-y-8">
+                <div className="space-y-6">
+                  <div className="inline-flex items-center rounded-full border border-sky-100 bg-white px-4 py-1.5 text-sm font-bold text-[#0066cc] shadow-sm">
+                    <span className="flex h-2.5 w-2.5 rounded-full bg-green-400 mr-2 animate-pulse"></span>
+                    Atendimento rápido em São Luís
+                  </div>
+                  <h1 className="font-display text-4xl font-bold tracking-tight text-text-heading sm:text-5xl xl:text-6xl 2xl:text-7xl leading-[1.1]">
                     <span className="text-balance">Conforto e frescor para o seu lar</span>
-                  </span>
-                </h1>
-                <p className="max-w-[600px] text-text-muted text-lg md:text-xl 2xl:text-2xl leading-relaxed font-medium text-center lg:text-justify">
-                  Deixe sua casa na temperatura ideal. Técnicos de confiança para instalação e manutenção do seu
-                  ar-condicionado, com carinho e eficiência.
-                </p>
-              </div>
-              <div className="flex flex-col gap-4 sm:flex-row">
-                <a
-                  href="#contato"
-                  className="h-14 px-8 rounded-full bg-[#0066cc] hover:bg-[#0052a3] text-white font-bold text-lg flex items-center justify-center transition-all shadow-lg shadow-[#0066cc]/20 hover:shadow-[#0066cc]/30 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-[#0066cc]/30"
-                >
-                  <span className="material-symbols-outlined mr-2">calendar_month</span>
-                  Agendar Visita
-                </a>
-                <a
-                  href="#servicos"
-                  className="h-14 px-8 rounded-full border-2 border-sky-100 bg-white hover:border-[#0066cc] hover:text-[#0066cc] text-text-muted font-bold flex items-center justify-center transition-colors focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-[#0066cc]/20"
-                >
-                  Conhecer Serviços
-                </a>
-              </div>
-              <div className="flex items-center gap-4 text-sm font-medium text-text-muted pt-4">
-                <div className="flex -space-x-3">
-                  <div className="h-10 w-10 rounded-full border-2 border-white bg-slate-100 overflow-hidden shadow-sm">
-                    <img
-                      alt="User"
-                      className="object-cover h-full w-full"
-                      src="https://lh3.googleusercontent.com/aida-public/AB6AXuAfrxwo10QJM7oUm84_tCJlcGpH7yh1FPcZ1f7CZRODBXCJDWHYJ3tAaWYY4L3szuehFTX3V1EsNR5EPopS16G9RuVr3ZrFOJ-ZVIVtpLFgtaewsRc8K5JIfto2BUSCrLB4YOvb_hzZwgXZ94e27W-t5otoB56ivDuBCWurOmBcJJsr_tWhLbfae5ZIT_3YRRFHed55xPgz-mT0-YP2HNsYUcGxwg1i8s9A0bb87R8Gxnp-P29kt7xNasxdoixZKKjQX2a29bqQUQ"
-                      referrerPolicy="no-referrer"
-                      loading="lazy"
-                      decoding="async"
-                    />
+                  </h1>
+                  <p className="max-w-[44rem] text-text-muted text-lg md:text-xl 2xl:text-2xl leading-relaxed font-medium text-center lg:text-justify">
+                    Deixe sua casa na temperatura ideal. Técnicos de confiança para instalação e manutenção do seu
+                    ar-condicionado, com carinho e eficiência.
+                  </p>
+                </div>
+                <div className="flex flex-col gap-4 sm:flex-row">
+                  <a
+                    href="#contato"
+                    className="h-14 px-8 rounded-full bg-[#0066cc] hover:bg-[#0052a3] text-white font-bold text-lg flex items-center justify-center transition-all shadow-lg shadow-[#0066cc]/20 hover:shadow-[#0066cc]/30 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-[#0066cc]/30"
+                  >
+                    <span className="material-symbols-outlined mr-2">calendar_month</span>
+                    Agendar Visita
+                  </a>
+                  <a
+                    href="#servicos"
+                    className="h-14 px-8 rounded-full border-2 border-sky-100 bg-white hover:border-[#0066cc] hover:text-[#0066cc] text-text-muted font-bold flex items-center justify-center transition-colors focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-[#0066cc]/20"
+                  >
+                    Conhecer Serviços
+                  </a>
+                </div>
+                <div className="flex items-center gap-4 text-sm font-medium text-text-muted pt-4">
+                  <div className="flex -space-x-3">
+                    <div className="h-10 w-10 rounded-full border-2 border-white bg-slate-100 overflow-hidden shadow-sm">
+                      <img
+                        alt="User"
+                        className="object-cover h-full w-full"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuAfrxwo10QJM7oUm84_tCJlcGpH7yh1FPcZ1f7CZRODBXCJDWHYJ3tAaWYY4L3szuehFTX3V1EsNR5EPopS16G9RuVr3ZrFOJ-ZVIVtpLFgtaewsRc8K5JIfto2BUSCrLB4YOvb_hzZwgXZ94e27W-t5otoB56ivDuBCWurOmBcJJsr_tWhLbfae5ZIT_3YRRFHed55xPgz-mT0-YP2HNsYUcGxwg1i8s9A0bb87R8Gxnp-P29kt7xNasxdoixZKKjQX2a29bqQUQ"
+                        referrerPolicy="no-referrer"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    </div>
+                    <div className="h-10 w-10 rounded-full border-2 border-white bg-slate-100 overflow-hidden shadow-sm">
+                      <img
+                        alt="User"
+                        className="object-cover h-full w-full"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuAfAoiP-33zve4NVg0bKzJTM777fEQA8GjXoE2tXkFZFgUnJ7n0PfOueyeswtMYwZpxu1X-RqDVDKG3aHBEqTg_bmfsrwVvl97Kxl_MtMi8cOLLZsjPOap_QaiuKo_ae47QoSGV6idgHsllUjxRV5rDPqd85-YzvKlJjjuh6nsL1upvfBFWadCI4sf1hMXM2egPu0nwlnfhXwNPH_9MlQJ04x8z4aPL24KaBJs4IRwVuPeJw9USwQUWU9a0JWW6VkAwJNKphdInZA"
+                        referrerPolicy="no-referrer"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    </div>
+                    <div className="h-10 w-10 rounded-full border-2 border-white bg-slate-100 overflow-hidden shadow-sm">
+                      <img
+                        alt="User"
+                        className="object-cover h-full w-full"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1-AbM65UjIURRfAtMDOia9O_LozOO524GiEHKyYavOdashcyZYcyIg7NWaF9RUKThC5tbmVFRrftHfakI3nJVHJgQL8ZusKRzT9zhNZKAqsq1x5OLvMDE48WsFuCEhVLG9sAFNN3wT86x22NySQOgp6DIBtjNV9nLk3jT9qKcW-D_o-ajlcdnjHuJVwBRkj7E8lVVyjZpz6PlzHLRKCP76_LK3Y-Bx7zVPlPwqnWvxEdc6orKiWFWoJVuVS7Iyji7coikBsMXqg"
+                        referrerPolicy="no-referrer"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    </div>
                   </div>
-                  <div className="h-10 w-10 rounded-full border-2 border-white bg-slate-100 overflow-hidden shadow-sm">
-                    <img
-                      alt="User"
-                      className="object-cover h-full w-full"
-                      src="https://lh3.googleusercontent.com/aida-public/AB6AXuAfAoiP-33zve4NVg0bKzJTM777fEQA8GjXoE2tXkFZFgUnJ7n0PfOueyeswtMYwZpxu1X-RqDVDKG3aHBEqTg_bmfsrwVvl97Kxl_MtMi8cOLLZsjPOap_QaiuKo_ae47QoSGV6idgHsllUjxRV5rDPqd85-YzvKlJjjuh6nsL1upvfBFWadCI4sf1hMXM2egPu0nwlnfhXwNPH_9MlQJ04x8z4aPL24KaBJs4IRwVuPeJw9USwQUWU9a0JWW6VkAwJNKphdInZA"
-                      referrerPolicy="no-referrer"
-                      loading="lazy"
-                      decoding="async"
-                    />
-                  </div>
-                  <div className="h-10 w-10 rounded-full border-2 border-white bg-slate-100 overflow-hidden shadow-sm">
-                    <img
-                      alt="User"
-                      className="object-cover h-full w-full"
-                      src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1-AbM65UjIURRfAtMDOia9O_LozOO524GiEHKyYavOdashcyZYcyIg7NWaF9RUKThC5tbmVFRrftHfakI3nJVHJgQL8ZusKRzT9zhNZKAqsq1x5OLvMDE48WsFuCEhVLG9sAFNN3wT86x22NySQOgp6DIBtjNV9nLk3jT9qKcW-D_o-ajlcdnjHuJVwBRkj7E8lVVyjZpz6PlzHLRKCP76_LK3Y-Bx7zVPlPwqnWvxEdc6orKiWFWoJVuVS7Iyji7coikBsMXqg"
-                      referrerPolicy="no-referrer"
-                      loading="lazy"
-                      decoding="async"
-                    />
+                  <div>
+                    <div className="flex text-yellow-400 text-xs mb-0.5">
+                      <span className="material-symbols-outlined text-[16px] leading-none fill-current">star</span>
+                      <span className="material-symbols-outlined text-[16px] leading-none fill-current">star</span>
+                      <span className="material-symbols-outlined text-[16px] leading-none fill-current">star</span>
+                      <span className="material-symbols-outlined text-[16px] leading-none fill-current">star</span>
+                      <span className="material-symbols-outlined text-[16px] leading-none fill-current">star</span>
+                    </div>
+                    <span className="font-bold text-text-heading">+500 famílias</span> felizes
                   </div>
                 </div>
-                <div>
-                  <div className="flex text-yellow-400 text-xs mb-0.5">
-                    <span className="material-symbols-outlined text-[16px] leading-none fill-current">star</span>
-                    <span className="material-symbols-outlined text-[16px] leading-none fill-current">star</span>
-                    <span className="material-symbols-outlined text-[16px] leading-none fill-current">star</span>
-                    <span className="material-symbols-outlined text-[16px] leading-none fill-current">star</span>
-                    <span className="material-symbols-outlined text-[16px] leading-none fill-current">star</span>
-                  </div>
-                  <span className="font-bold text-text-heading">+500 famílias</span> felizes
-                </div>
+              </div>
+            </div>
+
+            <div className="hidden lg:flex items-center justify-center">
+              <div className="relative">
+                <div className="absolute -inset-8 rounded-full bg-[#0066cc]/10 blur-3xl" aria-hidden="true" />
+                <img
+                  alt="LK Refrigeração"
+                  src="/images/logo.png"
+                  className="relative w-[22rem] xl:w-[26rem] 2xl:w-[30rem] h-auto object-contain drop-shadow"
+                />
               </div>
             </div>
           </div>
