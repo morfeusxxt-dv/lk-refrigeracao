@@ -84,13 +84,13 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="hidden lg:flex items-center justify-center">
+            <div className="flex items-center justify-center">
               <div className="relative">
                 <div className="absolute -inset-8 rounded-full bg-[#0066cc]/10 blur-3xl" aria-hidden="true" />
                 <img
                   alt="LK Refrigeração"
                   src="/images/logo.png"
-                  className="relative w-[22rem] xl:w-[28rem] 2xl:w-[38rem] h-auto object-contain drop-shadow"
+                  className="relative w-[16rem] sm:w-[18rem] md:w-[20rem] lg:w-[22rem] xl:w-[28rem] 2xl:w-[38rem] h-auto object-contain drop-shadow"
                 />
               </div>
             </div>
