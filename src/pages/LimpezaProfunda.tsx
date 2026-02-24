@@ -28,28 +28,15 @@ export default function LimpezaProfunda() {
               puro e funcionamento eficiente.
             </p>
 
-            <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="rounded-2xl border border-slate-100 overflow-hidden">
-                <div className="aspect-[16/9] bg-sky-100">
-                  <img
-                    src="/images/limpeza-profunda.png"
-                    alt="Exemplo de limpeza profunda"
-                    className="h-full w-full object-cover"
-                    loading="lazy"
-                    decoding="async"
-                  />
-                </div>
-              </div>
-              <div className="rounded-2xl border border-slate-100 overflow-hidden">
-                <div className="aspect-[16/9] bg-sky-100">
-                  <img
-                    src="/images/instalacao-split.png"
-                    alt="Exemplo de limpeza profunda"
-                    className="h-full w-full object-cover"
-                    loading="lazy"
-                    decoding="async"
-                  />
-                </div>
+            <div className="mt-8 rounded-2xl border border-slate-100 overflow-hidden">
+              <div className="aspect-[16/9] bg-sky-100">
+                <img
+                  src="/images/limpeza-profunda.png"
+                  alt="Limpeza profunda de ar-condicionado"
+                  className="h-full w-full object-cover"
+                  loading="lazy"
+                  decoding="async"
+                />
               </div>
             </div>
 

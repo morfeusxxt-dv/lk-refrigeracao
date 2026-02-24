@@ -28,28 +28,15 @@ export default function Manutencao() {
               reduzir consumo e evitar paradas inesperadas.
             </p>
 
-            <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="rounded-2xl border border-slate-100 overflow-hidden">
-                <div className="aspect-[16/9] bg-sky-100">
-                  <img
-                    src="/images/preventiva.png"
-                    alt="Exemplo de manutenção"
-                    className="h-full w-full object-cover"
-                    loading="lazy"
-                    decoding="async"
-                  />
-                </div>
-              </div>
-              <div className="rounded-2xl border border-slate-100 overflow-hidden">
-                <div className="aspect-[16/9] bg-sky-100">
-                  <img
-                    src="/images/unidade-externa.png"
-                    alt="Exemplo de manutenção"
-                    className="h-full w-full object-cover"
-                    loading="lazy"
-                    decoding="async"
-                  />
-                </div>
+            <div className="mt-8 rounded-2xl border border-slate-100 overflow-hidden">
+              <div className="aspect-[16/9] bg-sky-100">
+                <img
+                  src="/images/preventiva.png"
+                  alt="Manutenção de ar-condicionado"
+                  className="h-full w-full object-cover"
+                  loading="lazy"
+                  decoding="async"
+                />
               </div>
             </div>
 
