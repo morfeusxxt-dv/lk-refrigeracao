@@ -22,21 +22,25 @@ export default function LimpezaProfunda() {
             <h1 className="mt-4 font-display text-3xl sm:text-4xl font-bold tracking-tight text-text-heading">
               Limpeza Profunda
             </h1>
-            <p className="mt-4 text-text-muted text-base sm:text-lg leading-relaxed">
-              A higienização profunda remove sujeira acumulada, fungos e odores, ajudando na qualidade do ar e no
-              desempenho do aparelho. Fazemos a limpeza completa de componentes internos e testes para garantir ar mais
-              puro e funcionamento eficiente.
-            </p>
+            <div className="mt-8 grid gap-8 lg:grid-cols-5 lg:items-center">
+              <div className="lg:col-span-3">
+                <p className="text-text-muted text-base sm:text-lg leading-relaxed">
+                  A higienização profunda remove sujeira acumulada, fungos e odores, ajudando na qualidade do ar e no
+                  desempenho do aparelho. Fazemos a limpeza completa de componentes internos e testes para garantir ar
+                  mais puro e funcionamento eficiente.
+                </p>
+              </div>
 
-            <div className="mt-8 rounded-2xl border border-slate-100 overflow-hidden">
-              <div className="aspect-[16/9] bg-sky-100">
-                <img
-                  src="/images/limpeza-profunda.png"
-                  alt="Limpeza profunda de ar-condicionado"
-                  className="h-full w-full object-cover"
-                  loading="lazy"
-                  decoding="async"
-                />
+              <div className="lg:col-span-2">
+                <div className="rounded-2xl border border-slate-100 bg-white overflow-hidden shadow-sm">
+                  <img
+                    src="/images/farda3.png"
+                    alt="Limpeza profunda de ar-condicionado"
+                    className="w-full h-auto object-contain"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </div>
               </div>
             </div>
 
