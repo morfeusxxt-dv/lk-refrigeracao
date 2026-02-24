@@ -1,15 +1,16 @@
+import { useState } from "react";
+
 export default function App() {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
   return (
     <div className="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden bg-background-light text-text-main font-body antialiased">
       <header className="sticky top-0 z-50 w-full border-b border-slate-100 bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/80 shadow-sm">
         <div className="container mx-auto max-w-[1200px] px-4 md:px-6">
           <div className="flex h-20 items-center justify-between">
-            <div className="flex items-center gap-2">
-              <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[#0066cc]/10 text-[#0066cc]">
-                <span className="material-symbols-outlined text-2xl">ac_unit</span>
-              </div>
-              <span className="font-display text-2xl font-bold tracking-tight text-[#0066cc]">LK Refrigeração</span>
-            </div>
+            <a href="#inicio" className="flex items-center">
+              <img alt="LK Refrigeração" className="h-12 w-auto" src="/images/logo.png" />
+            </a>
             <nav className="hidden md:flex items-center gap-8">
               <a className="text-base font-semibold text-text-muted hover:text-[#0066cc] transition-colors" href="#inicio">Início</a>
               <a className="text-base font-semibold text-text-muted hover:text-[#0066cc] transition-colors" href="#servicos">Serviços</a>
@@ -23,19 +24,46 @@ export default function App() {
                 WhatsApp
               </a>
             </div>
-            <button className="md:hidden flex h-10 w-10 items-center justify-center rounded-full bg-slate-100 text-text-main hover:bg-slate-200">
-              <span className="material-symbols-outlined">menu</span>
+            <button
+              type="button"
+              aria-label={mobileMenuOpen ? "Fechar menu" : "Abrir menu"}
+              aria-expanded={mobileMenuOpen}
+              className="md:hidden flex h-10 w-10 items-center justify-center rounded-full bg-slate-100 text-text-main hover:bg-slate-200"
+              onClick={() => setMobileMenuOpen((v) => !v)}
+            >
+              <span className="material-symbols-outlined">{mobileMenuOpen ? "close" : "menu"}</span>
             </button>
           </div>
+
+          {mobileMenuOpen && (
+            <nav className="md:hidden pb-4">
+              <div className="flex flex-col gap-2 rounded-2xl bg-white p-3 border border-slate-100 shadow-sm">
+                <a className="rounded-xl px-4 py-3 font-bold text-text-heading hover:bg-slate-50" href="#inicio" onClick={() => setMobileMenuOpen(false)}>Início</a>
+                <a className="rounded-xl px-4 py-3 font-bold text-text-heading hover:bg-slate-50" href="#servicos" onClick={() => setMobileMenuOpen(false)}>Serviços</a>
+                <a className="rounded-xl px-4 py-3 font-bold text-text-heading hover:bg-slate-50" href="#galeria" onClick={() => setMobileMenuOpen(false)}>Galeria</a>
+                <a className="rounded-xl px-4 py-3 font-bold text-text-heading hover:bg-slate-50" href="#areas" onClick={() => setMobileMenuOpen(false)}>Áreas</a>
+                <a className="rounded-xl px-4 py-3 font-bold text-text-heading hover:bg-slate-50" href="#contato" onClick={() => setMobileMenuOpen(false)}>Contato</a>
+                <a
+                  href="https://wa.me/5598982106557"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-2 flex h-12 items-center justify-center rounded-full bg-[#25D366] px-6 text-base font-bold text-white shadow-md shadow-green-200"
+                >
+                  <span className="material-symbols-outlined mr-2">chat</span>
+                  WhatsApp
+                </a>
+              </div>
+            </nav>
+          )}
         </div>
       </header>
       <main className="flex-1">
         <section className="relative py-12 md:py-20 lg:py-24 overflow-hidden bg-gradient-to-b from-white to-[#e6f2ff]" id="inicio">
           <div className="container relative mx-auto max-w-[1200px] px-4 md:px-6">
-            <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 items-center">
-              <div className="flex flex-col justify-center space-y-8 order-2 lg:order-1">
+            <div className="flex flex-col items-center text-center">
+              <div className="flex flex-col justify-center space-y-8 max-w-[850px]">
                 <div className="space-y-6">
-                  <div className="inline-flex items-center rounded-full border border-sky-100 bg-white px-4 py-1.5 text-sm font-bold text-primary shadow-sm">
+                  <div className="inline-flex items-center rounded-full border border-sky-100 bg-white px-4 py-1.5 text-sm font-bold text-[#0066cc] shadow-sm">
                     <span className="flex h-2.5 w-2.5 rounded-full bg-green-400 mr-2 animate-pulse"></span>
                     Atendimento rápido em São Luís
                   </div>
@@ -47,13 +75,13 @@ export default function App() {
                   </p>
                 </div>
                 <div className="flex flex-col gap-4 sm:flex-row">
-                  <button className="h-14 px-8 rounded-full bg-[#0066cc] hover:bg-[#0052a3] text-white font-bold text-lg flex items-center justify-center transition-all shadow-lg shadow-[#0066cc]/20 hover:shadow-[#0066cc]/30">
+                  <a href="#contato" className="h-14 px-8 rounded-full bg-[#0066cc] hover:bg-[#0052a3] text-white font-bold text-lg flex items-center justify-center transition-all shadow-lg shadow-[#0066cc]/20 hover:shadow-[#0066cc]/30">
                     <span className="material-symbols-outlined mr-2">calendar_month</span>
                     Agendar Visita
-                  </button>
-                  <button className="h-14 px-8 rounded-full border-2 border-sky-100 bg-white hover:border-[#0066cc] hover:text-[#0066cc] text-text-muted font-bold flex items-center justify-center transition-colors">
+                  </a>
+                  <a href="#servicos" className="h-14 px-8 rounded-full border-2 border-sky-100 bg-white hover:border-[#0066cc] hover:text-[#0066cc] text-text-muted font-bold flex items-center justify-center transition-colors">
                     Conhecer Serviços
-                  </button>
+                  </a>
                 </div>
                 <div className="flex items-center gap-4 text-sm font-medium text-text-muted pt-4">
                   <div className="flex -space-x-3">
@@ -78,26 +106,6 @@ export default function App() {
                     <span className="font-bold text-text-heading">+500 famílias</span> felizes
                   </div>
                 </div>
-              </div>
-              <div className="order-1 lg:order-2 relative mx-auto w-full max-w-[700px] lg:max-w-none">
-                <div className="relative rounded-[3rem] overflow-hidden shadow-2xl shadow-sky-900/10 bg-white p-6">
-                  <div className="relative rounded-[2.5rem] overflow-hidden aspect-[4/5] md:aspect-square">
-                    <img alt="Família feliz em casa climatizada" className="object-cover w-full h-full transform transition-transform duration-700 hover:scale-105" src="/images/familia.png" referrerPolicy="no-referrer" />
-                    <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/60 to-transparent pt-24">
-                      <div className="flex items-center gap-3 bg-white/95 backdrop-blur-sm p-4 rounded-2xl shadow-lg max-w-xs mx-auto">
-                        <div className="p-3 bg-blue-100 rounded-xl text-[#0066cc]">
-                          <span className="material-symbols-outlined">sentiment_very_satisfied</span>
-                        </div>
-                        <div>
-                          <p className="text-xs font-bold text-text-muted uppercase tracking-wider">Ambiente</p>
-                          <p className="font-display font-bold text-text-heading text-lg">Super Agradável</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="absolute -z-10 top-10 right-10 w-64 h-64 bg-yellow-200/40 rounded-full blur-3xl"></div>
-                <div className="absolute -z-10 bottom-10 left-10 w-64 h-64 bg-blue-200/40 rounded-full blur-3xl"></div>
               </div>
             </div>
           </div>
@@ -138,7 +146,7 @@ export default function App() {
                 <p className="text-text-muted leading-relaxed mb-4">
                   Instalamos seu aparelho novo com todo cuidado, sem sujeira e no local ideal para refrescar sua casa inteira.
                 </p>
-                <a className="inline-flex items-center font-bold text-[#0066cc] hover:text-[#0052a3]" href="#">
+                <a className="inline-flex items-center font-bold text-[#0066cc] hover:text-[#0052a3]" href="#contato">
                   Saiba mais <span className="material-symbols-outlined ml-1 text-sm">arrow_forward</span>
                 </a>
               </div>
@@ -150,7 +158,7 @@ export default function App() {
                 <p className="text-text-muted leading-relaxed mb-4">
                   Seu ar parou de gelar? Fazemos o conserto rápido para devolver o conforto da sua família.
                 </p>
-                <a className="inline-flex items-center font-bold text-[#0066cc] hover:text-[#0052a3]" href="#">
+                <a className="inline-flex items-center font-bold text-[#0066cc] hover:text-[#0052a3]" href="#contato">
                   Saiba mais <span className="material-symbols-outlined ml-1 text-sm">arrow_forward</span>
                 </a>
               </div>
@@ -162,7 +170,7 @@ export default function App() {
                 <p className="text-text-muted leading-relaxed mb-4">
                   Removemos fungos e bactérias para proteger a saúde respiratória de quem você ama. Ar puro de verdade.
                 </p>
-                <a className="inline-flex items-center font-bold text-[#0066cc] hover:text-[#0052a3]" href="#">
+                <a className="inline-flex items-center font-bold text-[#0066cc] hover:text-[#0052a3]" href="#contato">
                   Saiba mais <span className="material-symbols-outlined ml-1 text-sm">arrow_forward</span>
                 </a>
               </div>
@@ -179,7 +187,7 @@ export default function App() {
                 Confira alguns dos nossos serviços realizados com qualidade e profissionalismo.
               </p>
             </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4">
               <div className="group relative rounded-3xl overflow-hidden shadow-soft hover:shadow-hover transition-all duration-300">
                 <div className="aspect-[4/5] overflow-hidden">
                   <img alt="Ambiente super agradável com ar condicionado" className="object-cover w-full h-full transform transition-transform duration-500 group-hover:scale-110" src="/images/ambiente-agradavel.png" />
@@ -257,7 +265,7 @@ export default function App() {
               </div>
               <div className="space-y-8 pl-0 lg:pl-10">
                 <div className="space-y-4">
-                  <span className="text-primary font-bold tracking-wider uppercase text-sm bg-blue-100 px-3 py-1 rounded-full">Onde Atendemos</span>
+                  <span className="text-[#0066cc] font-bold tracking-wider uppercase text-sm bg-blue-100 px-3 py-1 rounded-full">Onde Atendemos</span>
                   <h2 className="font-display text-3xl font-bold tracking-tight sm:text-4xl text-text-heading">Atendimento Local de Confiança</h2>
                   <p className="text-text-muted text-lg">
                     Nossa equipe é da região e conhece bem as necessidades de quem mora aqui. Atendemos com agilidade e cordialidade.
@@ -265,7 +273,7 @@ export default function App() {
                 </div>
                 <div className="space-y-4">
                   <div className="flex items-center gap-5 rounded-2xl bg-white p-5 shadow-soft border border-sky-100 hover:bg-sky-100 transition-colors cursor-default">
-                    <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary text-white shadow-md">
+                    <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[#0066cc] text-white shadow-md">
                       <span className="material-symbols-outlined">location_on</span>
                     </div>
                     <div>
@@ -274,7 +282,7 @@ export default function App() {
                     </div>
                   </div>
                 </div>
-                <a href="https://wa.me/5598982106557" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto h-14 px-8 rounded-full bg-primary text-white font-bold text-lg flex items-center justify-center transition-all hover:bg-sky-600 shadow-lg shadow-sky-200">
+                <a href="https://wa.me/5598982106557" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto h-14 px-8 rounded-full bg-[#0066cc] text-white font-bold text-lg flex items-center justify-center transition-all hover:bg-[#0052a3] shadow-lg shadow-[#0066cc]/20">
                   <span className="material-symbols-outlined mr-2">calendar_month</span>
                   Agendar Agora
                 </a>
@@ -285,7 +293,7 @@ export default function App() {
         <section className="py-16 md:py-24 bg-gradient-to-t from-[#e6f2ff] to-white">
           <div className="container mx-auto max-w-[1200px] px-4 md:px-6">
             <div className="mb-12 flex flex-col items-center text-center">
-              <span className="mb-3 rounded-full bg-blue-100 px-4 py-1.5 text-sm font-bold text-primary uppercase tracking-wide">Depoimentos</span>
+              <span className="mb-3 rounded-full bg-blue-100 px-4 py-1.5 text-sm font-bold text-[#0066cc] uppercase tracking-wide">Depoimentos</span>
               <h2 className="font-display text-3xl font-bold tracking-tight sm:text-4xl text-text-heading">Famílias Satisfeitas</h2>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -351,7 +359,7 @@ export default function App() {
         </section>
         <section className="py-16 bg-white relative border-t border-slate-100" id="contato">
           <div className="container mx-auto max-w-[1200px] px-4 md:px-6 relative z-10">
-            <div className="rounded-[2.5rem] bg-gradient-to-br from-primary to-sky-500 p-8 md:p-16 text-center shadow-xl overflow-hidden relative">
+            <div className="rounded-[2.5rem] bg-gradient-to-br from-[#0066cc] to-[#0052a3] p-8 md:p-16 text-center shadow-xl overflow-hidden relative">
               <div className="absolute top-0 left-0 w-96 h-96 bg-white/10 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2"></div>
               <div className="absolute bottom-0 right-0 w-96 h-96 bg-blue-900/10 rounded-full blur-3xl translate-x-1/2 translate-y-1/2"></div>
               <h2 className="font-display text-3xl font-bold tracking-tight text-white sm:text-5xl mb-6 relative z-10">Sua casa merece esse conforto</h2>
@@ -359,11 +367,11 @@ export default function App() {
                 Fale conosco agora mesmo. Respondemos rapidinho no WhatsApp para agendar sua visita.
               </p>
               <div className="flex flex-col sm:flex-row gap-6 justify-center relative z-10">
-                <a href="https://wa.me/5598982106557" target="_blank" rel="noopener noreferrer" className="h-16 px-10 rounded-full bg-white text-primary font-bold text-xl flex items-center justify-center transition-transform hover:scale-105 shadow-lg">
+                <a href="https://wa.me/5598982106557" target="_blank" rel="noopener noreferrer" className="h-16 px-10 rounded-full bg-white text-[#0066cc] font-bold text-xl flex items-center justify-center transition-transform hover:scale-105 shadow-lg">
                   <span className="material-symbols-outlined mr-3 text-3xl text-[#25D366]">chat</span>
                   Falar no WhatsApp
                 </a>
-                <a href="tel:+5598982106557" className="h-16 px-10 rounded-full bg-primary-800/30 border-2 border-white/30 text-white font-bold text-xl flex items-center justify-center hover:bg-white/10 transition-colors">
+                <a href="tel:+5598982106557" className="h-16 px-10 rounded-full bg-black/10 border-2 border-white/30 text-white font-bold text-xl flex items-center justify-center hover:bg-white/10 transition-colors">
                   <span className="material-symbols-outlined mr-3">call</span>
                   (98) 98210-6557
                 </a>
@@ -373,10 +381,7 @@ export default function App() {
               <div className="grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-8">
                 <div className="space-y-6">
                   <div className="flex items-center gap-2">
-                    <div className="flex h-8 w-8 items-center justify-center rounded-full bg-primary text-white">
-                      <span className="material-symbols-outlined text-lg">ac_unit</span>
-                    </div>
-                    <span className="font-display font-bold text-xl text-primary">LK Refrigeração</span>
+                    <img alt="LK Refrigeração" className="h-10 w-auto" src="/images/logo.png" />
                   </div>
                   <p className="text-sm text-text-muted leading-relaxed">
                     Trazendo conforto e qualidade de vida para lares em São Luís e região com serviços de excelência.
@@ -385,25 +390,25 @@ export default function App() {
                 <div>
                   <h3 className="font-display font-bold text-text-heading text-lg mb-6">Serviços</h3>
                   <ul className="space-y-3 text-text-muted">
-                    <li><a className="hover:text-primary transition-colors hover:translate-x-1 inline-block" href="#">Instalação</a></li>
-                    <li><a className="hover:text-primary transition-colors hover:translate-x-1 inline-block" href="#">Manutenção</a></li>
-                    <li><a className="hover:text-primary transition-colors hover:translate-x-1 inline-block" href="#">Limpeza</a></li>
-                    <li><a className="hover:text-primary transition-colors hover:translate-x-1 inline-block" href="#">Contratos</a></li>
+                    <li><a className="hover:text-[#0066cc] transition-colors hover:translate-x-1 inline-block" href="#servicos">Instalação</a></li>
+                    <li><a className="hover:text-[#0066cc] transition-colors hover:translate-x-1 inline-block" href="#servicos">Manutenção</a></li>
+                    <li><a className="hover:text-[#0066cc] transition-colors hover:translate-x-1 inline-block" href="#servicos">Limpeza</a></li>
+                    <li><a className="hover:text-[#0066cc] transition-colors hover:translate-x-1 inline-block" href="#contato">Contratos</a></li>
                   </ul>
                 </div>
                 <div>
                   <h3 className="font-display font-bold text-text-heading text-lg mb-6">Contato</h3>
                   <ul className="space-y-4 text-text-muted">
                     <li className="flex items-start gap-3">
-                      <span className="material-symbols-outlined text-primary mt-0.5">mail</span>
+                      <span className="material-symbols-outlined text-[#0066cc] mt-0.5">mail</span>
                       contato@lkrefrigeracao.com
                     </li>
                     <li className="flex items-start gap-3">
-                      <span className="material-symbols-outlined text-primary mt-0.5">phone</span>
+                      <span className="material-symbols-outlined text-[#0066cc] mt-0.5">phone</span>
                       (98) 98210-6557
                     </li>
                     <li className="flex items-start gap-3">
-                      <span className="material-symbols-outlined text-primary mt-0.5">location_on</span>
+                      <span className="material-symbols-outlined text-[#0066cc] mt-0.5">location_on</span>
                       São Luís - MA
                     </li>
                   </ul>
@@ -411,10 +416,10 @@ export default function App() {
                 <div>
                   <h3 className="font-display font-bold text-text-heading text-lg mb-6">Redes Sociais</h3>
                   <div className="flex gap-4">
-                    <a className="h-12 w-12 rounded-full bg-slate-100 flex items-center justify-center text-text-muted hover:bg-primary hover:text-white transition-all duration-300" href="#">
+                    <a className="h-12 w-12 rounded-full bg-slate-100 flex items-center justify-center text-text-muted hover:bg-[#0066cc] hover:text-white transition-all duration-300" href="https://wa.me/5598982106557" target="_blank" rel="noopener noreferrer">
                       <svg aria-hidden="true" className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path clipRule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" fillRule="evenodd"></path></svg>
                     </a>
-                    <a className="h-12 w-12 rounded-full bg-slate-100 flex items-center justify-center text-text-muted hover:bg-primary hover:text-white transition-all duration-300" href="#">
+                    <a className="h-12 w-12 rounded-full bg-slate-100 flex items-center justify-center text-text-muted hover:bg-[#0066cc] hover:text-white transition-all duration-300" href="https://wa.me/5598982106557" target="_blank" rel="noopener noreferrer">
                       <svg aria-hidden="true" className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path clipRule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772 4.902 4.902 0 011.772-1.153c.636-.247 1.363.416 2.427-.465 1.067-.047 1.407-.06 3.808-.06zm0 1.838a2.536 2.536 0 00-2.529 2.536v.005c0 1.396 1.134 2.529 2.53 2.529a2.536 2.536 0 002.529-2.53v-.005a2.536 2.536 0 00-2.53-2.529zm4.333-.312a1.507 1.507 0 10-1.507 1.507 1.507 1.507 0 001.507-1.507z" fillRule="evenodd"></path></svg>
                     </a>
                   </div>
