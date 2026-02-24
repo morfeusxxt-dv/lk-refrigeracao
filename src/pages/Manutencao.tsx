@@ -15,7 +15,7 @@ export default function Manutencao() {
         </div>
 
         <div className="rounded-[2rem] bg-white border border-slate-100 shadow-soft overflow-hidden">
-          <div className="p-8 md:p-10">
+          <div className="p-6 sm:p-8 md:p-10">
             <span className="inline-flex items-center rounded-full bg-blue-100 px-3 py-1 text-sm font-bold text-[#0066cc]">
               Serviço
             </span>
@@ -49,14 +49,14 @@ export default function Manutencao() {
                 href="https://wa.me/5598982106557"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="h-14 px-8 rounded-full bg-[#25D366] text-white font-bold text-lg flex items-center justify-center transition-transform hover:scale-105 shadow-md shadow-green-200 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-green-300"
+                className="h-14 w-full sm:w-auto px-8 rounded-full bg-[#25D366] text-white font-bold text-lg flex items-center justify-center transition-transform hover:scale-105 shadow-md shadow-green-200 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-green-300"
               >
                 <span className="material-symbols-outlined mr-2">chat</span>
                 Pedir orçamento no WhatsApp
               </a>
               <Link
                 to="/#contato"
-                className="h-14 px-8 rounded-full bg-white border-2 border-sky-100 hover:border-[#0066cc] hover:text-[#0066cc] text-text-muted font-bold flex items-center justify-center transition-colors focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-[#0066cc]/20"
+                className="h-14 w-full sm:w-auto px-8 rounded-full bg-white border-2 border-sky-100 hover:border-[#0066cc] hover:text-[#0066cc] text-text-muted font-bold flex items-center justify-center transition-colors focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-[#0066cc]/20"
               >
                 Ir para contato
               </Link>

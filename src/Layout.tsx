@@ -19,9 +19,9 @@ export default function Layout() {
     <div className="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden bg-background-light text-text-main font-body antialiased">
       <header className="sticky top-0 z-50 w-full border-b border-slate-100 bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/80 shadow-sm">
         <div className="mx-auto w-full max-w-[110rem] 2xl:max-w-[140rem] px-4 sm:px-6 lg:px-8 2xl:px-12">
-          <div className="flex items-center justify-between py-4">
+          <div className="flex items-center justify-between py-3 sm:py-4">
             <a href="/#inicio" className="flex items-center">
-              <img alt="LK Refrigeração" className="h-12 w-auto" src="/images/logo.png" />
+              <img alt="LK Refrigeração" className="h-10 sm:h-12 w-auto" src="/images/logo.png" />
             </a>
             <nav className="hidden md:flex items-center gap-8">
               <a className="text-base font-semibold text-text-muted hover:text-[#0066cc] transition-colors" href="/#inicio">Início</a>
@@ -46,7 +46,7 @@ export default function Layout() {
               aria-label={mobileMenuOpen ? "Fechar menu" : "Abrir menu"}
               aria-expanded={mobileMenuOpen}
               aria-controls="mobile-nav"
-              className="md:hidden flex h-10 w-10 items-center justify-center rounded-full bg-slate-100 text-text-main hover:bg-slate-200"
+              className="md:hidden flex h-11 w-11 items-center justify-center rounded-full bg-slate-100 text-text-main hover:bg-slate-200"
               onClick={() => setMobileMenuOpen((v) => !v)}
             >
               <span className="material-symbols-outlined">{mobileMenuOpen ? "close" : "menu"}</span>

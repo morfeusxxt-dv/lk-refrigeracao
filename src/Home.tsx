@@ -2,7 +2,7 @@ export default function Home() {
   return (
     <>
       <section
-        className="relative py-12 md:py-20 lg:py-24 overflow-hidden bg-gradient-to-b from-white to-[#e6f2ff]"
+        className="relative py-10 md:py-20 lg:py-24 overflow-hidden bg-gradient-to-b from-white to-[#e6f2ff]"
         id="inicio"
       >
         <div className="relative mx-auto w-full max-w-[110rem] 2xl:max-w-[140rem] px-4 sm:px-6 lg:px-8 2xl:px-12">
@@ -25,14 +25,14 @@ export default function Home() {
                 <div className="flex flex-col gap-4 sm:flex-row">
                   <a
                     href="#contato"
-                    className="h-14 px-8 rounded-full bg-[#0066cc] hover:bg-[#0052a3] text-white font-bold text-lg flex items-center justify-center transition-all shadow-lg shadow-[#0066cc]/20 hover:shadow-[#0066cc]/30 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-[#0066cc]/30"
+                    className="h-14 w-full sm:w-auto px-8 rounded-full bg-[#0066cc] hover:bg-[#0052a3] text-white font-bold text-lg flex items-center justify-center transition-all shadow-lg shadow-[#0066cc]/20 hover:shadow-[#0066cc]/30 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-[#0066cc]/30"
                   >
                     <span className="material-symbols-outlined mr-2">calendar_month</span>
                     Agendar Visita
                   </a>
                   <a
                     href="#servicos"
-                    className="h-14 px-8 rounded-full border-2 border-sky-100 bg-white hover:border-[#0066cc] hover:text-[#0066cc] text-text-muted font-bold flex items-center justify-center transition-colors focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-[#0066cc]/20"
+                    className="h-14 w-full sm:w-auto px-8 rounded-full border-2 border-sky-100 bg-white hover:border-[#0066cc] hover:text-[#0066cc] text-text-muted font-bold flex items-center justify-center transition-colors focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-[#0066cc]/20"
                   >
                     Conhecer Serviços
                   </a>
@@ -98,7 +98,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-white py-10 border-y border-slate-100">
+      <section className="bg-white py-8 md:py-10 border-y border-slate-100">
         <div className="mx-auto w-full max-w-[110rem] 2xl:max-w-[140rem] px-4 sm:px-6 lg:px-8 2xl:px-12">
           <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16 text-center md:text-left opacity-80">
             <div className="flex items-center gap-3">
@@ -117,7 +117,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-16 md:py-24 bg-[#e6f2ff]" id="servicos">
+      <section className="py-12 md:py-24 bg-[#e6f2ff]" id="servicos">
         <div className="mx-auto w-full max-w-[110rem] 2xl:max-w-[140rem] px-4 sm:px-6 lg:px-8 2xl:px-12">
           <div className="flex flex-col items-center justify-center space-y-4 text-center lg:items-start lg:text-left mb-16">
             <span className="text-[#0066cc] font-bold tracking-wider uppercase text-sm bg-blue-100 px-3 py-1 rounded-full">O que fazemos</span>
@@ -126,8 +126,8 @@ export default function Home() {
               Soluções completas para você não se preocupar com o calor. Tudo feito com limpeza e organização.
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="group relative bg-white rounded-3xl p-8 shadow-soft hover:shadow-hover transition-all duration-300 border border-slate-100">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+            <div className="group relative bg-white rounded-3xl p-6 sm:p-8 shadow-soft hover:shadow-hover transition-all duration-300 border border-slate-100">
               <div className="mb-6 inline-flex h-16 w-16 items-center justify-center rounded-2xl bg-blue-50 text-[#0066cc] group-hover:scale-110 transition-transform duration-300">
                 <span className="material-symbols-outlined text-4xl">handyman</span>
               </div>
@@ -142,7 +142,7 @@ export default function Home() {
                 Saiba mais <span className="material-symbols-outlined ml-1 text-sm">arrow_forward</span>
               </a>
             </div>
-            <div className="group relative bg-white rounded-3xl p-8 shadow-soft hover:shadow-hover transition-all duration-300 border border-slate-100">
+            <div className="group relative bg-white rounded-3xl p-6 sm:p-8 shadow-soft hover:shadow-hover transition-all duration-300 border border-slate-100">
               <div className="mb-6 inline-flex h-16 w-16 items-center justify-center rounded-2xl bg-blue-50 text-[#0066cc] group-hover:scale-110 transition-transform duration-300">
                 <span className="material-symbols-outlined text-4xl">build_circle</span>
               </div>
@@ -157,7 +157,7 @@ export default function Home() {
                 Saiba mais <span className="material-symbols-outlined ml-1 text-sm">arrow_forward</span>
               </a>
             </div>
-            <div className="group relative bg-white rounded-3xl p-8 shadow-soft hover:shadow-hover transition-all duration-300 border border-slate-100">
+            <div className="group relative bg-white rounded-3xl p-6 sm:p-8 shadow-soft hover:shadow-hover transition-all duration-300 border border-slate-100">
               <div className="mb-6 inline-flex h-16 w-16 items-center justify-center rounded-2xl bg-blue-50 text-[#0066cc] group-hover:scale-110 transition-transform duration-300">
                 <span className="material-symbols-outlined text-4xl">cleaning_services</span>
               </div>
@@ -176,7 +176,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-16 md:py-24 bg-white" id="galeria">
+      <section className="py-12 md:py-24 bg-white" id="galeria">
         <div className="mx-auto w-full max-w-[110rem] 2xl:max-w-[140rem] px-4 sm:px-6 lg:px-8 2xl:px-12">
           <div className="flex flex-col items-center justify-center space-y-4 text-center lg:items-start lg:text-left mb-16">
             <span className="text-[#0066cc] font-bold tracking-wider uppercase text-sm bg-blue-100 px-3 py-1 rounded-full">Nosso Trabalho</span>
@@ -187,7 +187,7 @@ export default function Home() {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4">
             <div className="group relative rounded-3xl overflow-hidden shadow-soft hover:shadow-hover transition-all duration-300">
-              <div className="aspect-[4/5] overflow-hidden">
+              <div className="aspect-[3/4] sm:aspect-[4/5] overflow-hidden">
                 <img
                   alt="Ambiente super agradável com ar condicionado"
                   className="object-cover w-full h-full transform transition-transform duration-500 group-hover:scale-110"
@@ -196,15 +196,15 @@ export default function Home() {
                   decoding="async"
                 />
               </div>
-              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <div className="absolute bottom-0 left-0 right-0 p-6">
+              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-100 lg:opacity-0 lg:group-hover:opacity-100 transition-opacity duration-300">
+                <div className="absolute bottom-0 left-0 right-0 p-4 sm:p-6">
                   <p className="text-white font-bold text-lg">Ambiente Super Agradável</p>
                   <p className="text-blue-100 text-sm">Conforto e bem-estar</p>
                 </div>
               </div>
             </div>
             <div className="group relative rounded-3xl overflow-hidden shadow-soft hover:shadow-hover transition-all duration-300">
-              <div className="aspect-[4/5] overflow-hidden">
+              <div className="aspect-[3/4] sm:aspect-[4/5] overflow-hidden">
                 <img
                   alt="Instalação de ar condicionado split"
                   className="object-cover w-full h-full transform transition-transform duration-500 group-hover:scale-110"
@@ -213,15 +213,15 @@ export default function Home() {
                   decoding="async"
                 />
               </div>
-              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <div className="absolute bottom-0 left-0 right-0 p-6">
+              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-100 lg:opacity-0 lg:group-hover:opacity-100 transition-opacity duration-300">
+                <div className="absolute bottom-0 left-0 right-0 p-4 sm:p-6">
                   <p className="text-white font-bold text-lg">Instalação Split</p>
                   <p className="text-blue-100 text-sm">Instalação profissional</p>
                 </div>
               </div>
             </div>
             <div className="group relative rounded-3xl overflow-hidden shadow-soft hover:shadow-hover transition-all duration-300">
-              <div className="aspect-[4/5] overflow-hidden">
+              <div className="aspect-[3/4] sm:aspect-[4/5] overflow-hidden">
                 <img
                   alt="Manutenção preventiva de ar condicionado"
                   className="object-cover w-full h-full transform transition-transform duration-500 group-hover:scale-110"
@@ -230,15 +230,15 @@ export default function Home() {
                   decoding="async"
                 />
               </div>
-              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <div className="absolute bottom-0 left-0 right-0 p-6">
+              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-100 lg:opacity-0 lg:group-hover:opacity-100 transition-opacity duration-300">
+                <div className="absolute bottom-0 left-0 right-0 p-4 sm:p-6">
                   <p className="text-white font-bold text-lg">Preventiva</p>
                   <p className="text-blue-100 text-sm">Manutenção preventiva</p>
                 </div>
               </div>
             </div>
             <div className="group relative rounded-3xl overflow-hidden shadow-soft hover:shadow-hover transition-all duration-300">
-              <div className="aspect-[4/5] overflow-hidden">
+              <div className="aspect-[3/4] sm:aspect-[4/5] overflow-hidden">
                 <img
                   alt="Limpeza profunda de ar condicionado"
                   className="object-cover w-full h-full transform transition-transform duration-500 group-hover:scale-110"
@@ -247,15 +247,15 @@ export default function Home() {
                   decoding="async"
                 />
               </div>
-              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <div className="absolute bottom-0 left-0 right-0 p-6">
+              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-100 lg:opacity-0 lg:group-hover:opacity-100 transition-opacity duration-300">
+                <div className="absolute bottom-0 left-0 right-0 p-4 sm:p-6">
                   <p className="text-white font-bold text-lg">Limpeza Profunda</p>
                   <p className="text-blue-100 text-sm">Higienização completa</p>
                 </div>
               </div>
             </div>
             <div className="group relative rounded-3xl overflow-hidden shadow-soft hover:shadow-hover transition-all duration-300">
-              <div className="aspect-[4/5] overflow-hidden">
+              <div className="aspect-[3/4] sm:aspect-[4/5] overflow-hidden">
                 <img
                   alt="Unidade externa de ar condicionado"
                   className="object-cover w-full h-full transform transition-transform duration-500 group-hover:scale-110"
@@ -264,8 +264,8 @@ export default function Home() {
                   decoding="async"
                 />
               </div>
-              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <div className="absolute bottom-0 left-0 right-0 p-6">
+              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-100 lg:opacity-0 lg:group-hover:opacity-100 transition-opacity duration-300">
+                <div className="absolute bottom-0 left-0 right-0 p-4 sm:p-6">
                   <p className="text-white font-bold text-lg">Unidade Externa</p>
                   <p className="text-blue-100 text-sm">Instalação e manutenção</p>
                 </div>
@@ -275,10 +275,10 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-16 md:py-24 bg-[#e6f2ff] relative overflow-hidden" id="areas">
+      <section className="py-12 md:py-24 bg-[#e6f2ff] relative overflow-hidden" id="areas">
         <div className="relative mx-auto w-full max-w-[110rem] 2xl:max-w-[140rem] px-4 sm:px-6 lg:px-8 2xl:px-12">
           <div className="grid gap-12 lg:grid-cols-2 items-center">
-            <div className="relative h-[320px] sm:h-[400px] lg:h-[450px] w-full overflow-hidden rounded-[2.5rem] shadow-xl border-4 border-white">
+            <div className="relative h-[260px] sm:h-[380px] lg:h-[450px] w-full overflow-hidden rounded-[2.5rem] shadow-xl border-4 border-white">
               <img
                 alt="Técnico sorrindo em atendimento"
                 className="object-cover w-full h-full"
@@ -287,7 +287,7 @@ export default function Home() {
                 loading="lazy"
                 decoding="async"
               />
-              <div className="absolute bottom-6 left-6 right-6 bg-white/95 backdrop-blur-md p-6 rounded-2xl shadow-lg">
+              <div className="absolute bottom-4 left-4 right-4 sm:bottom-6 sm:left-6 sm:right-6 bg-white/95 backdrop-blur-md p-4 sm:p-6 rounded-2xl shadow-lg">
                 <div className="flex items-center gap-4">
                   <div className="h-12 w-12 rounded-full bg-green-100 flex items-center justify-center text-green-600">
                     <span className="material-symbols-outlined">local_shipping</span>
@@ -332,14 +332,14 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-16 md:py-24 bg-gradient-to-t from-[#e6f2ff] to-white">
+      <section className="py-12 md:py-24 bg-gradient-to-t from-[#e6f2ff] to-white">
         <div className="mx-auto w-full max-w-[110rem] 2xl:max-w-[140rem] px-4 sm:px-6 lg:px-8 2xl:px-12">
           <div className="mb-12 flex flex-col items-center text-center">
             <span className="mb-3 rounded-full bg-blue-100 px-4 py-1.5 text-sm font-bold text-[#0066cc] uppercase tracking-wide">Depoimentos</span>
             <h2 className="font-display text-3xl font-bold tracking-tight sm:text-4xl text-text-heading">Famílias Satisfeitas</h2>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="flex flex-col rounded-3xl bg-white p-8 shadow-soft border border-slate-100">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+            <div className="flex flex-col rounded-3xl bg-white p-6 sm:p-8 shadow-soft border border-slate-100">
               <div className="flex text-yellow-400 mb-4">
                 <span className="material-symbols-outlined fill-current">star</span>
                 <span className="material-symbols-outlined fill-current">star</span>
@@ -367,7 +367,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="flex flex-col rounded-3xl bg-white p-8 shadow-soft border border-slate-100">
+            <div className="flex flex-col rounded-3xl bg-white p-6 sm:p-8 shadow-soft border border-slate-100">
               <div className="flex text-yellow-400 mb-4">
                 <span className="material-symbols-outlined fill-current">star</span>
                 <span className="material-symbols-outlined fill-current">star</span>
@@ -395,7 +395,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="flex flex-col rounded-3xl bg-white p-8 shadow-soft border border-slate-100">
+            <div className="flex flex-col rounded-3xl bg-white p-6 sm:p-8 shadow-soft border border-slate-100">
               <div className="flex text-yellow-400 mb-4">
                 <span className="material-symbols-outlined fill-current">star</span>
                 <span className="material-symbols-outlined fill-current">star</span>
@@ -427,9 +427,9 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-16 bg-white relative border-t border-slate-100" id="contato">
+      <section className="py-12 bg-white relative border-t border-slate-100" id="contato">
         <div className="mx-auto w-full max-w-[110rem] 2xl:max-w-[140rem] px-4 sm:px-6 lg:px-8 2xl:px-12 relative z-10">
-          <div className="rounded-[2.5rem] bg-gradient-to-br from-[#0066cc] to-[#0052a3] p-8 md:p-16 text-center shadow-xl overflow-hidden relative">
+          <div className="rounded-[2.5rem] bg-gradient-to-br from-[#0066cc] to-[#0052a3] p-6 sm:p-8 md:p-16 text-center shadow-xl overflow-hidden relative">
             <div className="absolute top-0 left-0 w-72 h-72 sm:w-96 sm:h-96 bg-white/10 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2"></div>
             <div className="absolute bottom-0 right-0 w-72 h-72 sm:w-96 sm:h-96 bg-blue-900/10 rounded-full blur-3xl translate-x-1/2 translate-y-1/2"></div>
             <h2 className="font-display text-3xl font-bold tracking-tight text-white sm:text-5xl mb-6 relative z-10">
@@ -438,19 +438,19 @@ export default function Home() {
             <p className="mx-auto max-w-[600px] text-blue-50 text-lg sm:text-xl mb-10 font-medium relative z-10">
               Fale conosco agora mesmo. Respondemos rapidinho no WhatsApp para agendar sua visita.
             </p>
-            <div className="flex flex-col sm:flex-row gap-6 justify-center relative z-10">
+            <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center relative z-10">
               <a
                 href="https://wa.me/5598982106557"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="h-16 px-10 rounded-full bg-white text-[#0066cc] font-bold text-xl flex items-center justify-center transition-transform hover:scale-105 shadow-lg focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-white/40"
+                className="h-16 w-full sm:w-auto px-10 rounded-full bg-white text-[#0066cc] font-bold text-xl flex items-center justify-center transition-transform hover:scale-105 shadow-lg focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-white/40"
               >
                 <span className="material-symbols-outlined mr-3 text-3xl text-[#25D366]">chat</span>
                 Falar no WhatsApp
               </a>
               <a
                 href="tel:+5598982106557"
-                className="h-16 px-10 rounded-full bg-black/10 border-2 border-white/30 text-white font-bold text-xl flex items-center justify-center hover:bg-white/10 transition-colors focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-white/40"
+                className="h-16 w-full sm:w-auto px-10 rounded-full bg-black/10 border-2 border-white/30 text-white font-bold text-xl flex items-center justify-center hover:bg-white/10 transition-colors focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-white/40"
               >
                 <span className="material-symbols-outlined mr-3">call</span>
                 (98) 98210-6557
