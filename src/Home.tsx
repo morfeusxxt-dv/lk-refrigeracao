@@ -1,4 +1,21 @@
+import { useEffect, useState } from "react";
+
+type LightboxImage = { src: string; alt: string };
+
 export default function Home() {
+  const [lightbox, setLightbox] = useState<LightboxImage | null>(null);
+
+  useEffect(() => {
+    if (!lightbox) return;
+
+    const onKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setLightbox(null);
+    };
+
+    window.addEventListener("keydown", onKeyDown);
+    return () => window.removeEventListener("keydown", onKeyDown);
+  }, [lightbox]);
+
   return (
     <>
       <section
@@ -43,8 +60,7 @@ export default function Home() {
                       <img
                         alt="User"
                         className="object-cover h-full w-full"
-                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuAfrxwo10QJM7oUm84_tCJlcGpH7yh1FPcZ1f7CZRODBXCJDWHYJ3tAaWYY4L3szuehFTX3V1EsNR5EPopS16G9RuVr3ZrFOJ-ZVIVtpLFgtaewsRc8K5JIfto2BUSCrLB4YOvb_hzZwgXZ94e27W-t5otoB56ivDuBCWurOmBcJJsr_tWhLbfae5ZIT_3YRRFHed55xPgz-mT0-YP2HNsYUcGxwg1i8s9A0bb87R8Gxnp-P29kt7xNasxdoixZKKjQX2a29bqQUQ"
-                        referrerPolicy="no-referrer"
+                        src="/images/logo.png"
                         loading="lazy"
                         decoding="async"
                       />
@@ -53,8 +69,7 @@ export default function Home() {
                       <img
                         alt="User"
                         className="object-cover h-full w-full"
-                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuAfAoiP-33zve4NVg0bKzJTM777fEQA8GjXoE2tXkFZFgUnJ7n0PfOueyeswtMYwZpxu1X-RqDVDKG3aHBEqTg_bmfsrwVvl97Kxl_MtMi8cOLLZsjPOap_QaiuKo_ae47QoSGV6idgHsllUjxRV5rDPqd85-YzvKlJjjuh6nsL1upvfBFWadCI4sf1hMXM2egPu0nwlnfhXwNPH_9MlQJ04x8z4aPL24KaBJs4IRwVuPeJw9USwQUWU9a0JWW6VkAwJNKphdInZA"
-                        referrerPolicy="no-referrer"
+                        src="/images/logo.png"
                         loading="lazy"
                         decoding="async"
                       />
@@ -63,8 +78,7 @@ export default function Home() {
                       <img
                         alt="User"
                         className="object-cover h-full w-full"
-                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1-AbM65UjIURRfAtMDOia9O_LozOO524GiEHKyYavOdashcyZYcyIg7NWaF9RUKThC5tbmVFRrftHfakI3nJVHJgQL8ZusKRzT9zhNZKAqsq1x5OLvMDE48WsFuCEhVLG9sAFNN3wT86x22NySQOgp6DIBtjNV9nLk3jT9qKcW-D_o-ajlcdnjHuJVwBRkj7E8lVVyjZpz6PlzHLRKCP76_LK3Y-Bx7zVPlPwqnWvxEdc6orKiWFWoJVuVS7Iyji7coikBsMXqg"
-                        referrerPolicy="no-referrer"
+                        src="/images/logo.png"
                         loading="lazy"
                         decoding="async"
                       />
@@ -188,7 +202,17 @@ export default function Home() {
             </p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4">
-            <div className="group relative rounded-3xl overflow-hidden shadow-soft hover:shadow-hover transition-all duration-300">
+            <button
+              type="button"
+              aria-label="Abrir foto: Ambiente Super Agradável"
+              className="group relative rounded-3xl overflow-hidden shadow-soft hover:shadow-hover transition-all duration-300 text-left"
+              onClick={() =>
+                setLightbox({
+                  src: "/images/ambiente-agradavel.jpg",
+                  alt: "Ambiente super agradável com ar condicionado",
+                })
+              }
+            >
               <div className="aspect-[3/4] sm:aspect-[4/5] overflow-hidden">
                 <img
                   alt="Ambiente super agradável com ar condicionado"
@@ -204,8 +228,18 @@ export default function Home() {
                   <p className="text-blue-100 text-sm">Conforto e bem-estar</p>
                 </div>
               </div>
-            </div>
-            <div className="group relative rounded-3xl overflow-hidden shadow-soft hover:shadow-hover transition-all duration-300">
+            </button>
+            <button
+              type="button"
+              aria-label="Abrir foto: Instalação Split"
+              className="group relative rounded-3xl overflow-hidden shadow-soft hover:shadow-hover transition-all duration-300 text-left"
+              onClick={() =>
+                setLightbox({
+                  src: "/images/instalacao-split.jpg",
+                  alt: "Instalação de ar condicionado split",
+                })
+              }
+            >
               <div className="aspect-[3/4] sm:aspect-[4/5] overflow-hidden">
                 <img
                   alt="Instalação de ar condicionado split"
@@ -221,8 +255,18 @@ export default function Home() {
                   <p className="text-blue-100 text-sm">Instalação profissional</p>
                 </div>
               </div>
-            </div>
-            <div className="group relative rounded-3xl overflow-hidden shadow-soft hover:shadow-hover transition-all duration-300">
+            </button>
+            <button
+              type="button"
+              aria-label="Abrir foto: Preventiva"
+              className="group relative rounded-3xl overflow-hidden shadow-soft hover:shadow-hover transition-all duration-300 text-left"
+              onClick={() =>
+                setLightbox({
+                  src: "/images/preventiva.jpg",
+                  alt: "Manutenção preventiva de ar condicionado",
+                })
+              }
+            >
               <div className="aspect-[3/4] sm:aspect-[4/5] overflow-hidden">
                 <img
                   alt="Manutenção preventiva de ar condicionado"
@@ -238,8 +282,18 @@ export default function Home() {
                   <p className="text-blue-100 text-sm">Manutenção preventiva</p>
                 </div>
               </div>
-            </div>
-            <div className="group relative rounded-3xl overflow-hidden shadow-soft hover:shadow-hover transition-all duration-300">
+            </button>
+            <button
+              type="button"
+              aria-label="Abrir foto: Limpeza Profunda"
+              className="group relative rounded-3xl overflow-hidden shadow-soft hover:shadow-hover transition-all duration-300 text-left"
+              onClick={() =>
+                setLightbox({
+                  src: "/images/limpeza-profunda.jpg",
+                  alt: "Limpeza profunda de ar condicionado",
+                })
+              }
+            >
               <div className="aspect-[3/4] sm:aspect-[4/5] overflow-hidden">
                 <img
                   alt="Limpeza profunda de ar condicionado"
@@ -255,8 +309,18 @@ export default function Home() {
                   <p className="text-blue-100 text-sm">Higienização completa</p>
                 </div>
               </div>
-            </div>
-            <div className="group relative rounded-3xl overflow-hidden shadow-soft hover:shadow-hover transition-all duration-300">
+            </button>
+            <button
+              type="button"
+              aria-label="Abrir foto: Unidade Externa"
+              className="group relative rounded-3xl overflow-hidden shadow-soft hover:shadow-hover transition-all duration-300 text-left"
+              onClick={() =>
+                setLightbox({
+                  src: "/images/unidade-externa.jpg",
+                  alt: "Unidade externa de ar condicionado",
+                })
+              }
+            >
               <div className="aspect-[3/4] sm:aspect-[4/5] overflow-hidden">
                 <img
                   alt="Unidade externa de ar condicionado"
@@ -272,7 +336,7 @@ export default function Home() {
                   <p className="text-blue-100 text-sm">Instalação e manutenção</p>
                 </div>
               </div>
-            </div>
+            </button>
           </div>
         </div>
       </section>
@@ -284,8 +348,7 @@ export default function Home() {
               <img
                 alt="Técnico sorrindo em atendimento"
                 className="object-cover w-full h-full"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuB2MiWjgGFxDdRIZDqGMqTHAae6La2gy2DsMJ-P6nEs-F3-mMMTGpvtxn-1VOf4wBZYStCdgZpBwKnVGy6pJee3EKGiiGcEmx9phs2wSorKwtSG9e7bZgkv9Db3jH0ylqUusDVZv2upQsjGhK_onI8xTvdgPR32ILvGMzGX-76yFT6iqlnTXLSol3zIO_xSdKyUdCiYKvLFAs264UBb31tFwhqesjwG-Cb36Jg7pTdmulf_SAzbBpcXQIFgSRsYBqAWAYrsX-puHA"
-                referrerPolicy="no-referrer"
+                src="/images/familia.png"
                 loading="lazy"
                 decoding="async"
               />
@@ -357,8 +420,7 @@ export default function Home() {
                   <img
                     alt="Avatar"
                     className="h-full w-full object-cover"
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpboHXwJvvEJLPogWMIU_7nesL6V25_Tw3l7bWjZdY0lljxObslInT5AFhgYmULDfFIafA90hFCEVMi_9NNBsIglcJlb9WQnLQafh0hG3JHonkVs14KfN5rAvO4oTUA-xwhucdHFa6CtyfwQEQoMVeU2ZEzNAngbBqkQexdzTzdOpu0CRJfKdVWsBVORL3rQ2kLhuqe-7OKez9kjEz895blL-BjSvnyNsXzZ7sk79CoTQCcKrcRstVLdF9t1OEcasNapH1qVmZJw"
-                    referrerPolicy="no-referrer"
+                    src="/images/logo.png"
                     loading="lazy"
                     decoding="async"
                   />
@@ -385,8 +447,7 @@ export default function Home() {
                   <img
                     alt="Avatar"
                     className="h-full w-full object-cover"
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDdkWH8bRgLc0b5b8v2glzU4AlNtO5Bsy8JrNMshzEGm2rNrSvudsfp3bNnn0tKGEaMLEfgbfYsu9WpyUXyPGjEOJQfrImeGxH71QV_iag-Fg3cEFE2puwEJQ1N_PhBAoyYG_jbXlxBHObfg9rVBt88W4iUR7JdNXo7mLNCRPBq1UfYYo5rLl8j_uxgwBKQLO9K-m-cnV_MDZNhksTNwoKBaRtd3r_p7TrmIW0TDOMxQFpXPupmGbfQ603pXtLyboDAB2Uf-nUBw"
-                    referrerPolicy="no-referrer"
+                    src="/images/logo.png"
                     loading="lazy"
                     decoding="async"
                   />
@@ -413,8 +474,7 @@ export default function Home() {
                   <img
                     alt="Avatar"
                     className="h-full w-full object-cover"
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHm8hNqgBKrGDnojyQuZLCV-0FyP1LSP6mn4TbKTzoC-E6kvY8FRTgV9vZzxHj7xXbIFw7wqEuh8b0DG2_9qH9Q7dMs3iKnfVdqdYLkGiGB2Q7fU_ivmiIBv3ix6_16gfoxF7EL5yHdt4CcVXGNG44BXtIOZ8w_rv-z5OkxUA5_76tto5HXFMLW3RHqbKbZl9uCVK2wQw5JWjVZ2Z9tH4GFjts3dQ_f4jhSt79wfj17mjpJR9hhHGm4bBn4JyKiMcVxbQu9-QHEg"
-                    referrerPolicy="no-referrer"
+                    src="/images/logo.png"
                     loading="lazy"
                     decoding="async"
                   />
@@ -461,6 +521,33 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {lightbox && (
+        <div
+          className="fixed inset-0 z-[100] flex items-center justify-center bg-black/70 p-4"
+          role="dialog"
+          aria-modal="true"
+          aria-label="Imagem ampliada"
+          onClick={() => setLightbox(null)}
+        >
+          <div className="relative max-h-[85vh] w-full max-w-5xl" onClick={(e) => e.stopPropagation()}>
+            <button
+              type="button"
+              aria-label="Fechar"
+              className="absolute -top-3 -right-3 h-11 w-11 rounded-full bg-white text-text-heading shadow-soft flex items-center justify-center"
+              onClick={() => setLightbox(null)}
+            >
+              <span className="material-symbols-outlined">close</span>
+            </button>
+            <img
+              src={lightbox.src}
+              alt={lightbox.alt}
+              className="h-full max-h-[85vh] w-full rounded-3xl object-contain bg-white"
+              decoding="async"
+            />
+          </div>
+        </div>
+      )}
     </>
   );
 }

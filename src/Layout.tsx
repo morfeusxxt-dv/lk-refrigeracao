@@ -172,6 +172,16 @@ export default function Layout() {
         <Outlet />
       </main>
 
+      <a
+        href="https://wa.me/5598982106557"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Falar no WhatsApp"
+        className="fixed bottom-4 right-4 z-[90] flex h-14 w-14 items-center justify-center rounded-full bg-[#25D366] text-white shadow-lg shadow-green-300/40 transition-transform hover:scale-105 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-green-300"
+      >
+        <span className="material-symbols-outlined text-[28px] leading-none">chat</span>
+      </a>
+
       <footer className="bg-white border-t border-slate-100">
         <div className="mx-auto w-full max-w-[110rem] 2xl:max-w-[140rem] px-4 sm:px-6 lg:px-8 2xl:px-12">
           <div className="py-12">
