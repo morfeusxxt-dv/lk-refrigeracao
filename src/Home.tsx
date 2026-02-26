@@ -208,7 +208,7 @@ export default function Home() {
               className="group relative rounded-3xl overflow-hidden shadow-soft hover:shadow-hover transition-all duration-300 text-left"
               onClick={() =>
                 setLightbox({
-                  src: "/images/ambiente-agradavel.jpg",
+                  src: "/images/ambiente-agradavel.png",
                   alt: "Ambiente super agradável com ar condicionado",
                 })
               }
@@ -217,7 +217,7 @@ export default function Home() {
                 <img
                   alt="Ambiente super agradável com ar condicionado"
                   className="object-cover w-full h-full transform transition-transform duration-500 group-hover:scale-110"
-                  src="/images/ambiente-agradavel.jpg"
+                  src="/images/ambiente-agradavel.png"
                   loading="lazy"
                   decoding="async"
                 />
