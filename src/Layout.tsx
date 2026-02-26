@@ -1,8 +1,36 @@
-import { Outlet } from "react-router-dom";
-import { useEffect, useState } from "react";
+import { Link, Outlet, useLocation, useNavigate } from "react-router-dom";
+import { useCallback, useEffect, useState } from "react";
 
 export default function Layout() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  const scrollToHash = useCallback((hash: string) => {
+    const id = hash.replace(/^#/, "");
+    if (!id) return;
+
+    const el = document.getElementById(id);
+    if (!el) return;
+
+    el.scrollIntoView({ behavior: "smooth", block: "start" });
+  }, []);
+
+  const navigateToSection = useCallback(
+    (hash: string) => {
+      if (location.pathname !== "/") {
+        navigate(`/${hash}`);
+        return;
+      }
+
+      if (location.hash !== hash) {
+        navigate({ pathname: "/", hash });
+      }
+
+      scrollToHash(hash);
+    },
+    [location.hash, location.pathname, navigate, scrollToHash]
+  );
 
   useEffect(() => {
     if (!mobileMenuOpen) return;
@@ -15,20 +43,34 @@ export default function Layout() {
     };
   }, [mobileMenuOpen]);
 
+  useEffect(() => {
+    if (location.pathname !== "/") return;
+    if (!location.hash) return;
+
+    const t = window.setTimeout(() => scrollToHash(location.hash), 0);
+    return () => window.clearTimeout(t);
+  }, [location.hash, location.pathname, scrollToHash]);
+
   return (
     <div className="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden bg-background-light text-text-main font-body antialiased">
       <header className="sticky top-0 z-50 w-full border-b border-slate-100 bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/80 shadow-sm">
         <div className="mx-auto w-full max-w-[110rem] 2xl:max-w-[140rem] px-4 sm:px-6 lg:px-8 2xl:px-12">
           <div className="flex items-center justify-between py-3 sm:py-4">
-            <a href="/#inicio" className="flex items-center">
-              <img alt="LK Refrigeração" className="h-10 sm:h-12 w-auto" src="/images/logo.png" />
-            </a>
+            <Link to="/" onClick={() => navigateToSection("#inicio")} className="flex items-center">
+              <img
+                alt="LK Refrigeração"
+                className="h-10 sm:h-12 w-auto"
+                src="/images/logo.png"
+                decoding="async"
+                fetchPriority="high"
+              />
+            </Link>
             <nav className="hidden md:flex items-center gap-8">
-              <a className="text-base font-semibold text-text-muted hover:text-[#0066cc] transition-colors" href="/#inicio">Início</a>
-              <a className="text-base font-semibold text-text-muted hover:text-[#0066cc] transition-colors" href="/#servicos">Serviços</a>
-              <a className="text-base font-semibold text-text-muted hover:text-[#0066cc] transition-colors" href="/#galeria">Galeria</a>
-              <a className="text-base font-semibold text-text-muted hover:text-[#0066cc] transition-colors" href="/#areas">Áreas</a>
-              <a className="text-base font-semibold text-text-muted hover:text-[#0066cc] transition-colors" href="/#contato">Contato</a>
+              <button type="button" className="text-base font-semibold text-text-muted hover:text-[#0066cc] transition-colors" onClick={() => navigateToSection("#inicio")}>Início</button>
+              <button type="button" className="text-base font-semibold text-text-muted hover:text-[#0066cc] transition-colors" onClick={() => navigateToSection("#servicos")}>Serviços</button>
+              <button type="button" className="text-base font-semibold text-text-muted hover:text-[#0066cc] transition-colors" onClick={() => navigateToSection("#galeria")}>Galeria</button>
+              <button type="button" className="text-base font-semibold text-text-muted hover:text-[#0066cc] transition-colors" onClick={() => navigateToSection("#areas")}>Áreas</button>
+              <button type="button" className="text-base font-semibold text-text-muted hover:text-[#0066cc] transition-colors" onClick={() => navigateToSection("#contato")}>Contato</button>
             </nav>
             <div className="hidden md:flex items-center gap-4">
               <a
@@ -61,41 +103,56 @@ export default function Layout() {
                 aria-hidden="true"
               />
               <div className="relative z-50 flex flex-col gap-2 rounded-2xl bg-white p-3 border border-slate-100 shadow-sm">
-                <a
+                <button
+                  type="button"
                   className="rounded-xl px-4 py-3 font-bold text-text-heading hover:bg-slate-50"
-                  href="/#inicio"
-                  onClick={() => setMobileMenuOpen(false)}
+                  onClick={() => {
+                    setMobileMenuOpen(false);
+                    navigateToSection("#inicio");
+                  }}
                 >
                   Início
-                </a>
-                <a
+                </button>
+                <button
+                  type="button"
                   className="rounded-xl px-4 py-3 font-bold text-text-heading hover:bg-slate-50"
-                  href="/#servicos"
-                  onClick={() => setMobileMenuOpen(false)}
+                  onClick={() => {
+                    setMobileMenuOpen(false);
+                    navigateToSection("#servicos");
+                  }}
                 >
                   Serviços
-                </a>
-                <a
+                </button>
+                <button
+                  type="button"
                   className="rounded-xl px-4 py-3 font-bold text-text-heading hover:bg-slate-50"
-                  href="/#galeria"
-                  onClick={() => setMobileMenuOpen(false)}
+                  onClick={() => {
+                    setMobileMenuOpen(false);
+                    navigateToSection("#galeria");
+                  }}
                 >
                   Galeria
-                </a>
-                <a
+                </button>
+                <button
+                  type="button"
                   className="rounded-xl px-4 py-3 font-bold text-text-heading hover:bg-slate-50"
-                  href="/#areas"
-                  onClick={() => setMobileMenuOpen(false)}
+                  onClick={() => {
+                    setMobileMenuOpen(false);
+                    navigateToSection("#areas");
+                  }}
                 >
                   Áreas
-                </a>
-                <a
+                </button>
+                <button
+                  type="button"
                   className="rounded-xl px-4 py-3 font-bold text-text-heading hover:bg-slate-50"
-                  href="/#contato"
-                  onClick={() => setMobileMenuOpen(false)}
+                  onClick={() => {
+                    setMobileMenuOpen(false);
+                    navigateToSection("#contato");
+                  }}
                 >
                   Contato
-                </a>
+                </button>
                 <a
                   href="https://wa.me/5598982106557"
                   target="_blank"

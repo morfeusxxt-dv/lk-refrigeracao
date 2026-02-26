@@ -24,14 +24,14 @@ export default function Home() {
                 </div>
                 <div className="flex flex-col gap-4 sm:flex-row">
                   <a
-                    href="#contato"
+                    href="/#contato"
                     className="h-14 w-full sm:w-auto px-8 rounded-full bg-[#0066cc] hover:bg-[#0052a3] text-white font-bold text-lg flex items-center justify-center transition-all shadow-lg shadow-[#0066cc]/20 hover:shadow-[#0066cc]/30 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-[#0066cc]/30"
                   >
                     <span className="material-symbols-outlined mr-2">calendar_month</span>
                     Agendar Visita
                   </a>
                   <a
-                    href="#servicos"
+                    href="/#servicos"
                     className="h-14 w-full sm:w-auto px-8 rounded-full border-2 border-sky-100 bg-white hover:border-[#0066cc] hover:text-[#0066cc] text-text-muted font-bold flex items-center justify-center transition-colors focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-[#0066cc]/20"
                   >
                     Conhecer Serviços
@@ -90,6 +90,8 @@ export default function Home() {
                 <img
                   alt="LK Refrigeração"
                   src="/images/logo.png"
+                  decoding="async"
+                  fetchPriority="high"
                   className="relative w-[16rem] sm:w-[18rem] md:w-[20rem] lg:w-[22rem] xl:w-[28rem] 2xl:w-[38rem] h-auto object-contain drop-shadow"
                 />
               </div>
@@ -191,7 +193,7 @@ export default function Home() {
                 <img
                   alt="Ambiente super agradável com ar condicionado"
                   className="object-cover w-full h-full transform transition-transform duration-500 group-hover:scale-110"
-                  src="/images/ambiente-agradavel.png"
+                  src="/images/ambiente-agradavel.jpg"
                   loading="lazy"
                   decoding="async"
                 />
@@ -208,7 +210,7 @@ export default function Home() {
                 <img
                   alt="Instalação de ar condicionado split"
                   className="object-cover w-full h-full transform transition-transform duration-500 group-hover:scale-110"
-                  src="/images/instalacao-split.png"
+                  src="/images/instalacao-split.jpg"
                   loading="lazy"
                   decoding="async"
                 />
@@ -225,7 +227,7 @@ export default function Home() {
                 <img
                   alt="Manutenção preventiva de ar condicionado"
                   className="object-cover w-full h-full transform transition-transform duration-500 group-hover:scale-110"
-                  src="/images/preventiva.png"
+                  src="/images/preventiva.jpg"
                   loading="lazy"
                   decoding="async"
                 />
@@ -242,7 +244,7 @@ export default function Home() {
                 <img
                   alt="Limpeza profunda de ar condicionado"
                   className="object-cover w-full h-full transform transition-transform duration-500 group-hover:scale-110"
-                  src="/images/limpeza-profunda.png"
+                  src="/images/limpeza-profunda.jpg"
                   loading="lazy"
                   decoding="async"
                 />
@@ -259,7 +261,7 @@ export default function Home() {
                 <img
                   alt="Unidade externa de ar condicionado"
                   className="object-cover w-full h-full transform transition-transform duration-500 group-hover:scale-110"
-                  src="/images/unidade-externa.png"
+                  src="/images/unidade-externa.jpg"
                   loading="lazy"
                   decoding="async"
                 />
