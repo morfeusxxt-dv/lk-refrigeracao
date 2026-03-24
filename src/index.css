@@ -1,14 +1,56 @@
 @import "tailwindcss";
 
+@theme {
+  --color-primary: #0066cc;
+  --color-secondary: #0052a3;
+  --color-accent: #e6f2ff;
+  --color-background-light: #ffffff;
+  --color-background-dark: #f8fafc;
+  --color-card-light: #ffffff;
+  --color-text-main: #334155;
+  --color-text-heading: #0f172a;
+  --color-text-muted: #64748b;
+
+  --font-display: "Fredoka", sans-serif;
+  --font-body: "Nunito", sans-serif;
+
+  --shadow-soft: 0 4px 20px -2px rgba(0, 0, 0, 0.05);
+  --shadow-hover: 0 10px 25px -5px rgba(0, 102, 204, 0.15);
+}
+
 :root {
   font-size: clamp(15px, 0.6vw + 13px, 18px);
-  --primary: #0066cc;
-  --secondary: #0052a3;
-  --accent: #e6f2ff;
 }
 
 :where(a, button, input, textarea, select):focus-visible {
   outline: none;
   box-shadow: 0 0 0 4px rgba(0, 102, 204, 0.25);
   border-radius: 9999px;
+}
+
+@layer utilities {
+  /* Animação hero */
+  @keyframes fade-in-up {
+    from {
+      opacity: 0;
+      transform: translateY(24px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-fade-in-up {
+    animation: fade-in-up 0.6s ease-out both;
+  }
+
+  /* Esconde scrollbar */
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
 }

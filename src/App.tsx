@@ -4,6 +4,7 @@ import Home from "./Home";
 import Instalacao from "./pages/Instalacao";
 import Manutencao from "./pages/Manutencao";
 import LimpezaProfunda from "./pages/LimpezaProfunda";
+import PoliticaDePrivacidade from "./pages/PoliticaDePrivacidade";
 
 export default function App() {
   return (
@@ -14,6 +15,7 @@ export default function App() {
           <Route path="/servicos/instalacao" element={<Instalacao />} />
           <Route path="/servicos/manutencao" element={<Manutencao />} />
           <Route path="/servicos/limpeza-profunda" element={<LimpezaProfunda />} />
+          <Route path="/politica-de-privacidade" element={<PoliticaDePrivacidade />} />
           <Route path="/servicos/instalacao.html" element={<Navigate to="/servicos/instalacao" replace />} />
           <Route path="/servicos/manutencao.html" element={<Navigate to="/servicos/manutencao" replace />} />
           <Route

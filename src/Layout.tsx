@@ -1,5 +1,13 @@
 import { Link, Outlet, useLocation, useNavigate } from "react-router-dom";
 import { useCallback, useEffect, useState } from "react";
+import CookieBanner from "./components/CookieBanner";
+
+declare function gtag(...args: unknown[]): void;
+function trackWhatsApp() {
+  if (typeof gtag !== "undefined") {
+    gtag("event", "conversion", { send_to: "AW-17974208277" });
+  }
+}
 
 export default function Layout() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -59,7 +67,7 @@ export default function Layout() {
             <Link to="/" onClick={() => navigateToSection("#inicio")} className="flex items-center">
               <img
                 alt="LK Refrigeração"
-                className="h-10 sm:h-12 w-auto"
+                className="h-16 sm:h-20 w-auto"
                 src="/images/logo.png"
                 decoding="async"
                 fetchPriority="high"
@@ -77,10 +85,11 @@ export default function Layout() {
                 href="https://wa.me/5598982106557"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex h-12 items-center justify-center rounded-full bg-[#25D366] px-6 text-base font-bold text-white transition-transform hover:scale-105 shadow-md shadow-green-200"
+                onClick={trackWhatsApp}
+                className="flex h-12 items-center justify-center rounded-full bg-[#0066cc] hover:bg-[#0052a3] px-6 text-base font-bold text-white transition-all hover:scale-105 shadow-md shadow-blue-200"
               >
                 <span className="material-symbols-outlined mr-2">chat</span>
-                WhatsApp
+                Falar no WhatsApp
               </a>
             </div>
             <button
@@ -157,10 +166,11 @@ export default function Layout() {
                   href="https://wa.me/5598982106557"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mt-2 flex h-12 items-center justify-center rounded-full bg-[#25D366] px-6 text-base font-bold text-white shadow-md shadow-green-200"
+                  onClick={trackWhatsApp}
+                  className="mt-2 flex h-12 items-center justify-center rounded-full bg-[#0066cc] hover:bg-[#0052a3] px-6 text-base font-bold text-white shadow-md shadow-blue-200"
                 >
                   <span className="material-symbols-outlined mr-2">chat</span>
-                  WhatsApp
+                  Falar no WhatsApp
                 </a>
               </div>
             </nav>
@@ -177,6 +187,7 @@ export default function Layout() {
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Falar no WhatsApp"
+        onClick={trackWhatsApp}
         className="fixed bottom-4 right-4 z-[90] flex h-14 w-14 items-center justify-center rounded-full bg-[#25D366] text-white shadow-lg shadow-green-300/40 transition-transform hover:scale-105 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-green-300"
       >
         <span className="material-symbols-outlined text-[28px] leading-none">chat</span>
@@ -255,8 +266,8 @@ export default function Layout() {
                     </svg>
                   </a>
                   <a
-                    className="h-12 w-12 rounded-full bg-slate-100 flex items-center justify-center text-text-muted hover:bg-[#0066cc] hover:text-white transition-all duration-300"
-                    href="https://wa.me/5598982106557"
+                    className="h-12 w-12 rounded-full bg-slate-100 flex items-center justify-center text-text-muted hover:bg-gradient-to-tr hover:from-purple-500 hover:to-pink-500 hover:text-white transition-all duration-300"
+                    href="https://instagram.com/lkrefrigeracao"
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="Instagram"
@@ -272,12 +283,16 @@ export default function Layout() {
                 </div>
               </div>
             </div>
-            <div className="mt-12 border-t border-slate-100 pt-8 text-center text-sm text-text-muted">
-              © 2026 LK Refrigeração. Feito com carinho para você.
-            </div>
+          <div className="mt-12 border-t border-slate-100 pt-8 flex flex-col sm:flex-row items-center justify-between gap-3 text-sm text-text-muted">
+            <span>© 2026 LK Refrigeração. Feito com carinho para você.</span>
+            <Link to="/politica-de-privacidade" className="hover:text-[#0066cc] transition-colors">
+              Política de Privacidade
+            </Link>
+          </div>
           </div>
         </div>
       </footer>
+      <CookieBanner />
     </div>
   );
 }
