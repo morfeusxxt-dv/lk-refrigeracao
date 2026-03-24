@@ -1,6 +1,7 @@
 import { Link, Outlet, useLocation, useNavigate } from "react-router-dom";
 import { useCallback, useEffect, useState } from "react";
 import CookieBanner from "./components/CookieBanner";
+import { Analytics } from "@vercel/analytics/react";
 
 declare function gtag(...args: unknown[]): void;
 function trackWhatsApp() {
@@ -293,6 +294,7 @@ export default function Layout() {
         </div>
       </footer>
       <CookieBanner />
+      <Analytics />
     </div>
   );
 }
